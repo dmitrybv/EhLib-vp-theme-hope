@@ -92,8 +92,17 @@ index: false - не показывать страницу в sidebar
 &nbsp is the Non Breaking Space
 &emsp is a wide kind of space
 
+#Про Git
+Если добавил папку в .gitignore она автоматисески не удаляется и из репозитория.
+Для удаления папок из репозитория которые появились в .gitignore, нобходимо выполнить команды
 
+```
+# Remove the files from the index (not the actual files in the working copy)
+$ git rm -r --cached .
 
+# Add these removals to the Staging Area...
+$ git add .
 
-
-
+# ...and commit them!
+$ git commit -m "Clean up ignored files"
+```
