@@ -1,0 +1,25 @@
+<template><div><h1 id="marking-and-returning-to-records" tabindex="-1"><a class="header-anchor" href="#marking-and-returning-to-records" aria-hidden="true">#</a> Marking and Returning to Records</h1>
+<p>In EhLib before version 8.1 <code v-pre>TMemTableEh.Bookmark</code> object stored data in the form of a record number. Starting with version 8.1 the <code v-pre>TMemTableEh.Bookmark</code> property stores data as a pointer to the record object in the internal array of records. This allows you to uniquely identify a record when filtering, sorting, or deleting data in TMemTableEh.</p>
+<p>To see a new possibilities of using <code v-pre>Bookmarks</code> in <code v-pre>DBGridEh</code> look at a <code v-pre>Demo</code> project in the folder –
+<code v-pre>DEMOS\DBGridEh.MemTable.Bookmarks</code></p>
+<p>Due to changes in the method of storing data in <code v-pre>Bookmarks</code> the <code v-pre>SearchPanel</code> of <code v-pre>DBGridEh</code> component no longer supports searching within the selected records. Instead <code v-pre>DBGridEh</code> allows you to filter the data through <code v-pre>SearchPanel</code> without losing the list of selected records in the grid. To make the selected records not be cleared when navigating through <code v-pre>DBGridEh</code> when sorting set the <code v-pre>dghClearSelection</code> value in the <code v-pre>TDBGridEh.OptionsEh</code> property.</p>
+<p>In addition to moving from record to record in a dataset (or moving from one record to another by a specific number of records), you can mark a particular location in a dataset so that you can return to this location. <code v-pre>TDataSet</code> introduces a bookmarking feature that consists of a <code v-pre>Bookmark</code> property and five bookmark methods. In <code v-pre>TMemTable</code>, bookmarks contain the record number (<code v-pre>RecNo</code> property).</p>
+<h3 id="the-bookmark-property" tabindex="-1"><a class="header-anchor" href="#the-bookmark-property" aria-hidden="true">#</a> The Bookmark property.</h3>
+<p><code v-pre>Bookmark</code> gets or sets the current bookmark in a dataset. A bookmark marks a location in a dataset so that an application can easily return to that location quickly.
+An application can read <code v-pre>Bookmark</code> to retrieve the bookmark associated with the current record, and it can change the current record in the dataset by assigning a saved bookmark value to this property.</p>
+<h3 id="getbookmark-method" tabindex="-1"><a class="header-anchor" href="#getbookmark-method" aria-hidden="true">#</a> GetBookmark method</h3>
+<p>We do not recommend to use this method, use <code v-pre>Bookmark</code> property instead of it. See VCL documentation for detail.</p>
+<h3 id="gotobookmark-and-bookmarkvalid-method" tabindex="-1"><a class="header-anchor" href="#gotobookmark-and-bookmarkvalid-method" aria-hidden="true">#</a> GotoBookmark and BookmarkValid method</h3>
+<p>When passed a bookmark, <code v-pre>GotoBookmark</code> moves the cursor for the dataset to the location specified in the bookmark. Before calling <code v-pre>GotoBookmark</code>, you can call <code v-pre>BookmarkValid</code> to determine if the bookmark points to a record. <code v-pre>BookmarkValid</code> returns <code v-pre>True</code> if a specified bookmark points to a record.</p>
+<h3 id="comparebookmarks-method" tabindex="-1"><a class="header-anchor" href="#comparebookmarks-method" aria-hidden="true">#</a> CompareBookmarks method</h3>
+<p>You can also call <code v-pre>CompareBookmarks</code> to see if a bookmark you want to move to is different from another (or the current) bookmark. If the two bookmarks refer to the same record (or if both are nil), <code v-pre>CompareBookmarks</code> returns 0.</p>
+<h3 id="freebookmark-method" tabindex="-1"><a class="header-anchor" href="#freebookmark-method" aria-hidden="true">#</a> FreeBookmark method</h3>
+<p>This method is Used in combinations with <code v-pre>GetBookamrk</code>. I do not recommend to use this method. See VCL documentation for detail.</p>
+<p><code v-pre>function BookmarkToRec(Bookmark: TUniBookmarkEh): TMemoryRecordEh;</code></p>
+<dd>Convert Bookmark object into a TMemoryRecordEh object.</dd>
+<p><code v-pre>function RecToBookmark(Rec: TMemoryRecordEh): TUniBookmarkEh;</code></p>
+<dd>Convert a MemoryRecord object into Bookmark object.</dd>
+<p>Type of <code v-pre>TUniBookmarkEh</code> class depends on the version of Delphi and can be <code v-pre>TBookmark</code>, <code v-pre>array of Byte</code> or <code v-pre>TBookmarkStr</code> type.</p>
+</div></template>
+
+

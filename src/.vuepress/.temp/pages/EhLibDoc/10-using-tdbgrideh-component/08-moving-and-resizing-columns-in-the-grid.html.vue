@@ -1,0 +1,23 @@
+<template><div><h1 id="moving-and-resizing-columns-in-the-grid" tabindex="-1"><a class="header-anchor" href="#moving-and-resizing-columns-in-the-grid" aria-hidden="true">#</a> Moving and resizing columns in the grid</h1>
+<p>Use the <code v-pre>TColumnEh.Width</code> property to set the width of the column. You can use a <code v-pre>TColumnEh.MaxWidth</code> and <code v-pre>TColumnEh.MinWidth</code> property to limit the maximum and minimum width of the column. Usually it is necessary when the user is allowed to change the column width with the mouse. To allow the change column widths in Run-Time, set in a property of <code v-pre>dghColumnResize</code> <code v-pre>TDBGridEh.OptionsEh</code>. The same value is present in the properties <code v-pre>dgColumnResize</code> <code v-pre>TDBGridEh.Options</code>. If <code v-pre>dgColumnResize</code> value is set, then it is allowed to change as the width of the columns and column moving. This property is deprecated. The <code v-pre>dghColumnResize</code> value in <code v-pre>TDBGridEh.OptionsEh</code> property only affects changing the width.</p>
+<p>After changing the width of the column After changing the width of the column is called the <code v-pre>DBGridEh</code>.<code v-pre>OnColWidthsChanged</code>  event is called.</p>
+<p>In the grid it is possible to adjust the width of the columns so that they occupy the entire width of the visible area of the grid, and did not extend beyond the visible area.
+Set <code v-pre>TDBGridEh.AutoFitColWidths</code> to <code v-pre>True</code> to automatically change the column width so that the width will be equal to the entire grid visible part of the window. Additional property <code v-pre>TDBGridEh</code>.<code v-pre>MinAutoFitWidth</code> specifies the minimum width of the grid at which the change in width. Use <code v-pre>TColumnEh</code>.<code v-pre>AutoFitColWidth</code> property of the grid columns at to further determine whether the column is used for fitting the width of all columns to the width of the visible area.</p>
+<p>To allow the mouse to move the columns in the Run-Time, set in the property <code v-pre>dghColumnMove</code> <code v-pre>TDBGridEh.OptionsEh</code>. After the column is moved the <code v-pre>TDBGridEh.OnColumnMoved</code> event occurs.</p>
+<p>Use the following methods to control the width of columns:</p>
+<div class="language-pascal" data-ext="pascal"><pre v-pre class="language-pascal"><code><span class="token keyword">procedure</span> OptimizeColsWidth<span class="token punctuation">(</span>
+  ColumnsList<span class="token punctuation">:</span> TColumnsEhList<span class="token punctuation">;</span> 
+  <span class="token keyword">const</span> CheckRowCount <span class="token punctuation">:</span> Integer <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> 
+  <span class="token keyword">const</span> MaxWaitingTime<span class="token punctuation">:</span> Integer <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><dd>
+<p>Optimizes the column width so that the entire text of the column could be seen inside the cell. <code v-pre>ColumnsList</code> parameter specifies the list of columns for which it is necessary to perform optimization. <code v-pre>CheckRowCount</code> parameter specifies the number of records that need to get around to perform optimization. This parameter is set to limit the time of the method. <code v-pre>MaxWaitingTime</code> parameter specifies the maximum period of the method. Inside a method grid runs through all the records <code v-pre>DataSet</code>. If the option is <code v-pre>MaxWaitingTime</code> method adjourned once it reaches the specified value.</p>
+</dd>
+<div class="language-pascal" data-ext="pascal"><pre v-pre class="language-pascal"><code><span class="token keyword">procedure</span> OptimizeAllColsWidth<span class="token punctuation">(</span>
+  <span class="token keyword">const</span> CheckRowCount <span class="token punctuation">:</span> Integer <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> 
+  <span class="token keyword">const</span> MaxWaitingTime<span class="token punctuation">:</span> Integer <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><dd>
+The method works similarly to the previous method, but perform optimization for all the columns in the grid.
+</dd>
+</div></template>
+
+

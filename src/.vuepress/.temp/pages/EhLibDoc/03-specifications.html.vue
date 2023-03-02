@@ -1,0 +1,101 @@
+<template><div><h1 id="specification" tabindex="-1"><a class="header-anchor" href="#specification" aria-hidden="true">#</a> Specification</h1>
+<h2 id="ehlib-vcl-component-library-software-specification" tabindex="-1"><a class="header-anchor" href="#ehlib-vcl-component-library-software-specification" aria-hidden="true">#</a> EhLib.VCL component library - Software specification</h2>
+<h3 id="editions" tabindex="-1"><a class="header-anchor" href="#editions" aria-hidden="true">#</a> Editions:</h3>
+<ul>
+<li>Professional (Source codes  included)</li>
+<li>Standart (Without source codes)</li>
+</ul>
+<h3 id="software-type" tabindex="-1"><a class="header-anchor" href="#software-type" aria-hidden="true">#</a> Software type:</h3>
+<ul>
+<li>Library of components, classes and function for Delphi, C++ Builder, Lazarus.</li>
+</ul>
+<h3 id="supported-frameworks-base-libraries" tabindex="-1"><a class="header-anchor" href="#supported-frameworks-base-libraries" aria-hidden="true">#</a> Supported frameworks (Base Libraries):</h3>
+<ul>
+<li>VCL (Visual Components Library) for Delphi</li>
+<li>LCL (Lazarus Component Library) for Lazarus</li>
+<li>FMX (FireMonkey cross-platform GUI framework) NOT SUPPORTED</li>
+<li>CrossVCL (Add-on over the VCL library) for Delphi.</li>
+</ul>
+<h3 id="supported-platforms-and-os" tabindex="-1"><a class="header-anchor" href="#supported-platforms-and-os" aria-hidden="true">#</a> Supported platforms and OS:</h3>
+<ul>
+<li>Win32 - in Delphi and Lazarus development environment</li>
+<li>Win64 - in Delphi and Lazarus development environment</li>
+<li>OS X - in the development environment RAD Studio Delphi XE10.2 and higher. Requires additional CrossVCL library.</li>
+<li>Linux - (Option 1) in the RAD Studio Delphi XE10.2 and higher. Requires additional CrossVCL library.</li>
+<li>Linux - (Option 2) in the Lazarus development environment (Tested under Ubuntu 18.04.1).</li>
+</ul>
+<h3 id="supported-programming-languages" tabindex="-1"><a class="header-anchor" href="#supported-programming-languages" aria-hidden="true">#</a> Supported programming languages:</h3>
+<ul>
+<li>Delphi (Object Pascal)</li>
+<li>C++ Builder</li>
+<li>Lazarus (Free Pascal)</li>
+</ul>
+<h3 id="supported-development-environment-versions" tabindex="-1"><a class="header-anchor" href="#supported-development-environment-versions" aria-hidden="true">#</a> Supported development environment versions:</h3>
+<ul>
+<li>Code Gear Delphi 2009,</li>
+<li>Embarcadero Delphi and C++ Builder 2010,</li>
+<li>Embarcadero Delphi and C++ Builder XE,</li>
+<li>Embarcadero Delphi and C++ Builder XE2,</li>
+<li>Embarcadero Delphi and C++ Builder XE3,</li>
+<li>Embarcadero Delphi and C++ Builder XE4,</li>
+<li>Embarcadero Delphi and C++ Builder XE5,</li>
+<li>Embarcadero Delphi and C++ Builder XE6,</li>
+<li>Embarcadero Delphi and C++ Builder XE7,</li>
+<li>Embarcadero Delphi and C++ Builder XE8,</li>
+<li>Embarcadero Delphi and C++ Builder 10 Seattle,</li>
+<li>Embarcadero Delphi and C++ Builder 10.1 Berlin,</li>
+<li>Embarcadero Delphi and C++ Builder 10.2 Tokyo,</li>
+<li>Embarcadero Delphi and C++ Builder 10.3,</li>
+<li>Embarcadero Delphi and C++ Builder 10.4 Update 2,</li>
+<li>Embarcadero Delphi and C++ Builder 11.2,</li>
+<li>Lazarus 2.2.2 for Windows,</li>
+<li>Lazarus 2.2.2 for Linux (Tested Under Ubuntu 22.04)</li>
+</ul>
+<h3 id="ways-to-deliver-the-software-to-the-client" tabindex="-1"><a class="header-anchor" href="#ways-to-deliver-the-software-to-the-client" aria-hidden="true">#</a> Ways to deliver the software to the client:</h3>
+<ul>
+<li>The library is supplied in electronic form by downloading the installation package via the Internet.</li>
+</ul>
+<h3 id="term-of-use-of-the-library-and-license" tabindex="-1"><a class="header-anchor" href="#term-of-use-of-the-library-and-license" aria-hidden="true">#</a> Term of use of the library and license:</h3>
+<ul>
+<li>The period of use of the library and license is not limited in time. For a period of one year from the date of purchase, the time for free receipt of new versions of the library is limited.</li>
+</ul>
+<h3 id="technical-support-term" tabindex="-1"><a class="header-anchor" href="#technical-support-term" aria-hidden="true">#</a> Technical support term:</h3>
+<ul>
+<li>The term of technical support is not limited in time.</li>
+</ul>
+<h3 id="brief-description-of-the-library-functions" tabindex="-1"><a class="header-anchor" href="#brief-description-of-the-library-functions" aria-hidden="true">#</a> Brief description of the library functions:</h3>
+<ul>
+<li>The library contains a set of components and classes intended for writing professional interactive applications that work with the database.</li>
+</ul>
+<h3 id="library-documentation-is-available-in-the-following-languages" tabindex="-1"><a class="header-anchor" href="#library-documentation-is-available-in-the-following-languages" aria-hidden="true">#</a> Library documentation is available in the following languages:</h3>
+<ul>
+<li>Russian</li>
+<li>English</li>
+</ul>
+<h3 id="localization-of-the-interface-of-used-components-includes-the-following-languages" tabindex="-1"><a class="header-anchor" href="#localization-of-the-interface-of-used-components-includes-the-following-languages" aria-hidden="true">#</a> Localization of the interface of used components includes the following languages:</h3>
+<ul>
+<li>Russian</li>
+<li>English</li>
+<li>German</li>
+<li>Arabic</li>
+<li>Bulgarian</li>
+<li>Chinese (simplified)</li>
+<li>Czech</li>
+<li>Spanish</li>
+<li>Persian</li>
+<li>French</li>
+<li>Japanese</li>
+<li>Korean</li>
+<li>Polish</li>
+<li>Portuguese</li>
+<li>Slovak</li>
+<li>Turkish</li>
+<li>Ukrainian</li>
+</ul>
+<h3 id="visual-programming-features" tabindex="-1"><a class="header-anchor" href="#visual-programming-features" aria-hidden="true">#</a> Visual programming features:</h3>
+<p>The library includes visual components that allow you to quickly create and customize project forms without having to write code manually.</p>
+<h3 id="working-with-the-database" tabindex="-1"><a class="header-anchor" href="#working-with-the-database" aria-hidden="true">#</a> Working with the database</h3>
+<p>The visual components of the library do not depend on the database and allow you to interact with the database through any standard or third-party component that is inherited from TDataSet.</p>
+</div></template>
+
+

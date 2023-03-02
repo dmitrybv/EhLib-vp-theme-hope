@@ -1,0 +1,10 @@
+<template><div><h1 id="rich-text-before-and-after-grid" tabindex="-1"><a class="header-anchor" href="#rich-text-before-and-after-grid" aria-hidden="true">#</a> Rich text before and after grid</h1>
+<p><code v-pre>TPrintDBGridEh</code> allows to print/preview rich text before and after grid. Use <code v-pre>AfterGridText</code> and <code v-pre>BeforeGridText</code> to specify text. Using <code v-pre>SetSubstitutes</code> method you can substitute text in <code v-pre>BeforeGridText</code> and <code v-pre>AfterGridText</code> properties upon print/preview process.</p>
+<p><code v-pre>TPrintDBGridEh</code> allows to print <code v-pre>Rich text</code> before and after grid. To do this, use <code v-pre>AfterGridText</code> and <code v-pre>BeforeGridText</code> properties. Also, using the method <code v-pre>SetSubstitutes</code>, you can specify the substitution text in the <code v-pre>BeforeGridText</code> and <code v-pre>AfterGridText</code> properties in print / preview. A property of <code v-pre>AfterGridText</code> and <code v-pre>BeforeGridText</code> have type <code v-pre>TStrings</code>, although store a data type <code v-pre>TRichEditStrings</code>.</p>
+<p>Below is an example code for printing Rich text with the possibility of substitution:</p>
+<p><img src="@source/images/clip0036.png" alt="" loading="lazy"></p>
+<div class="language-pascal" data-ext="pascal"><pre v-pre class="language-pascal"><code>PrintDBGridEh1<span class="token punctuation">.</span>SetSubstitutes<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'%[Today]'</span><span class="token punctuation">,</span>DateToStr<span class="token punctuation">(</span>Now<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+PrintDBGridEh1<span class="token punctuation">.</span>Preview<span class="token punctuation">;</span>  
+</code></pre></div></div></template>
+
+

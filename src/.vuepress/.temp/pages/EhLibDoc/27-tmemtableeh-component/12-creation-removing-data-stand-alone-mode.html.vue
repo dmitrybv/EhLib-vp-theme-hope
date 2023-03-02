@@ -1,0 +1,13 @@
+<template><div><h1 id="creation-removing-table-data-in-memory-in-the-stand-alone-mode" tabindex="-1"><a class="header-anchor" href="#creation-removing-table-data-in-memory-in-the-stand-alone-mode" aria-hidden="true">#</a> Creation/removing table data in memory in the ‘stand-alone’ mode</h1>
+<p><code v-pre>MemTableEh</code> allows to create an internal array of records at design-time and at run-time. Before creating the table data, you need to set properties to specify the structure of the table you want to create. In particular, you need to specify structure of the fields of the new array.</p>
+<p>There are two ways to do this:</p>
+<p>First way, you can add field definitions to the <code v-pre>FieldDefs</code> property. At design time, double-click the <code v-pre>FieldDefs</code> property in the <code v-pre>Object Inspector</code> to bring up the collection editor. Use the collection editor to add, remove, or change properties of field definitions. At runtime, clear any existing field definitions and then use <code v-pre>AddFieldDef</code> method to add each new field definition. For each new field definition, set the properties of the <code v-pre>TFieldDef</code> object to specify the desired attributes of the field.</p>
+<p>Second way, you can use persistent field components instead. At <code v-pre>design time</code>, double-click on the dataset to bring up the <code v-pre>Fields editor</code>. In the <code v-pre>Fields editor</code>, right-click and choose ‘New Field’ command. Describe the basic properties of your field. Once the field is created, you can alter its properties in the <code v-pre>Object Inspector</code> by selecting the field in the Fields editor.</p>
+<p>After creating field definitions or persistent fields, you need to create internal array. At Design-time mode, click right mouse above dataset and choose 'Create DataSet'. This command does not come up in the context menu until you define the whole necessary information.</p>
+<p>To create an internal array at <code v-pre>Run-time</code>, you need to call <code v-pre>CreateDataSet</code> method.
+If <code v-pre>DataDriver</code> property is assigned then internal array will be created automatically on activations MemTable. At this case the structure of array <code v-pre>MemTable</code> get from <code v-pre>DataDriver</code>.</p>
+<p>In ‘stand-alone’ mode when <code v-pre>MemTable</code> is closing it does not delete internal array of records.  To close MemTable with simultaneous deleting of all records and structure, use <code v-pre>DestroyTable</code> method.</p>
+<p>Use <code v-pre>EmptyTable</code> method to delete all records from <code v-pre>MemTable</code>.</p>
+</div></template>
+
+

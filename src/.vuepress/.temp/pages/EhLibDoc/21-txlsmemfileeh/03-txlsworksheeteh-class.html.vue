@@ -1,0 +1,87 @@
+<template><div><h1 id="txlsworksheeteh-class" tabindex="-1"><a class="header-anchor" href="#txlsworksheeteh-class" aria-hidden="true">#</a> TXlsWorksheetEh Class</h1>
+<p><code v-pre>TXlsWorksheetEh</code> class contains tabular data for one table.</p>
+<p>Tabular data includes:</p>
+<dd>
+<ul>
+<li>
+<p>Column definition (Properties Columns, DefaultColWidth)</p>
+</li>
+<li>
+<p>Defining strings (Properties Rows, DefaultRowHeight)</p>
+</li>
+<li>
+<p>Values in Table Cells (Cells Property)</p>
+</li>
+<li>
+<p>Format for each cell (Color, Font, Line thickness, etc.) (Via IXlsFileCellsRangeEh interface)</p>
+</li>
+<li>
+<p>Define row grouping (Set via the properties Rows, OutlineRowsSummaryBelow)</p>
+</li>
+<li>
+<p>Column grouping definition (Set via properties Columns, OutlineColsSummaryRight)</p>
+</li>
+<li>
+<p>Print settings (Subproperties properties PrintParams)</p>
+</li>
+<li>
+<p>Setting non-scrollable areas (Properties FrozenColCount, FrozenRowCount)</p>
+</li>
+</ul>
+</dd>
+<br>
+<p>You can get access tp Worksheet from the collection of Worksheets in the Workbook.
+Like this:
+<code v-pre>TXlsMemFileEh.Workbook.Worksheets[Index]</code></p>
+<p><code v-pre>TXlsWorksheetEh</code> class has the following properties:</p>
+<p><code v-pre>property Name: String;</code></p>
+<dd>Worksheet title. In Excel, the title appears at the bottom of the bookmark list.</dd>
+<br>
+<p><code v-pre>property TabColor: TColor;</code></p>
+<dd>Table bookmark color.</dd>
+<br>
+<p><code v-pre>property AutoFilterRange: TXlsFileWorksheetCellsRectEh;</code></p>
+<dd>Auto filter area</dd>
+<br>
+<p><code v-pre>property CellDataExists[Col, Row: Integer]: Boolean;</code></p>
+<dd>Determine if the TXlsFileCellEh object was created at the specified coordinates.</dd>
+<br>
+<p><code v-pre>property Cells[Col, Row: Integer]: TXlsFileCellEh;</code></p>
+<dd>Access to table cells with coordinates Col, Row. Coordinates start at zero.</dd>
+<br>
+<p><code v-pre>property Columns: TXlsFileColumnsEh;</code></p>
+<dd>Page column options.</dd>
+<br>
+<p><code v-pre>property DefaultColWidth: Double;</code></p>
+<dd>The default column width.</dd>
+<br>
+<p><code v-pre>property DefaultRowHeight: Double;</code></p>
+<dd>Default line height.</dd>
+<br>
+<p><code v-pre>property DefaultRowHeight: Double;</code></p>
+<dd>The size of the area that contains nonblank cells</dd>
+<br>
+<p><code v-pre>property FrozenColCount: Integer;</code></p>
+<dd>The number of columns frozen.</dd>
+<br>
+<p><code v-pre>property FrozenRowCount: Integer;</code></p>
+<dd>The number of frozen lines.</dd>
+<br>
+<p><code v-pre>property OutlineRowsSummaryBelow: Boolean;</code></p>
+<dd>The group headers for the columns are below the group. The property is used when grouping strings.</dd>
+<br>
+<p><code v-pre>property OutlineColsSummaryRight: Boolean</code></p>
+<dd>The row group headers are located to the right of the group. The property is used when grouping columns.</dd>
+<br>
+<p><code v-pre>property PrintParams: TXlsFileWorksheetPrintParamsEh;</code></p>
+<dd>Print Options: Page Orientation, Header, etc.</dd>
+<br>
+<p><code v-pre>property Rows: TXlsFileRowsEh;</code></p>
+<dd>Page line options.</dd>
+<br>
+<p><code v-pre>property ZoomScale: Integer;</code></p>
+<dd>Scaling. Set as a percentage. The default is 100.</dd>
+<br>
+</div></template>
+
+

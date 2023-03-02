@@ -1,0 +1,35 @@
+// place your custom styles here
+
+//$sidebar-width: 28rem;
+// .sidebar {
+//   width: 18rem;
+// }
+
+::-webkit-scrollbar {
+ width: initial;
+ height: initial;
+}
+
+::-webkit-scrollbar-thumb {
+  //background: #d8d8d8;
+  background: #d8d8d8;
+}
+
+::-webkit-scrollbar-track-piece {
+  border-radius: initial;
+  background:  #F5F5F5;
+}
+
+// ::-webkit-scrollbar {
+//   width: auto;
+//   height: auto;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: auto;
+// }
+
+// ::-webkit-scrollbar-track-piece {
+//   border-radius: auto;
+//   background: auto;
+// }

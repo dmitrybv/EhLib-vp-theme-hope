@@ -1,0 +1,17 @@
+<template><div><h1 id="unload-the-contents-of-the-components-in-tdbvertgrideh-xlsx-file" tabindex="-1"><a class="header-anchor" href="#unload-the-contents-of-the-components-in-tdbvertgrideh-xlsx-file" aria-hidden="true">#</a> Unload the contents of the components in TDBVertGridEh Xlsx file</h1>
+<p>The library contains a set of classes and methods for &quot;direct&quot; export data of <code v-pre>TDBVertGridEh</code> to the file or stream in Xlsx format and XMLSpreadsheet.</p>
+<p>To unload Xlsx format, use TDBVertGridExportToXlsxEh class or global procedure.</p>
+<p><code v-pre>TDBVertGridExportToXlsxEh = class;</code></p>
+<p>The class implements <code v-pre>VertGridEh</code> upload data to a file in Xlsx format (MS Excel file format). Unloading is carried out directly into a file without using additional libraries and OLE objects.  Full unloading works in versions of Delphi since Delphi XE2. To operate in earlier versions of Delphi you must use the third-party to form the Zip file version 2.</p>
+<p>To upload data, use procedure:</p>
+<div class="language-pascal line-numbers-mode" data-ext="pascal"><pre v-pre class="language-pascal"><code><span class="token keyword">procedure</span> ExportDBVertGridEhToXlsx<span class="token punctuation">(</span>DBVertGridEh<span class="token punctuation">:</span> TCustomDBVertGridEh<span class="token punctuation">;</span> 
+  <span class="token keyword">const</span> FileName<span class="token punctuation">:</span> <span class="token keyword">String</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>To upload data in a format XMLSpreadsheet use global routine:</p>
+<div class="language-pascal line-numbers-mode" data-ext="pascal"><pre v-pre class="language-pascal"><code><span class="token keyword">procedure</span> DBVertGridEh_ExportToStreamAsXMLSpreadsheet<span class="token punctuation">(</span>DBVertGridEh<span class="token punctuation">:</span> TCustomDBVertGridEh<span class="token punctuation">;</span> 
+  Stream<span class="token punctuation">:</span> TStream<span class="token punctuation">;</span> 
+  Options<span class="token punctuation">:</span> TExportAsXMLSpShOptionsEh<span class="token punctuation">;</span> 
+  ForWholeGrid<span class="token punctuation">:</span> Boolean<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>DBVertGridEh already uses this procedure to upload the data to the clipboard for pasting data to MS Excel. When transferring data in this format, MS Excel receives information not only about the content of the data but also about font, color, lines and the type of data.</p>
+</div></template>
+
+
