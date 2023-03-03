@@ -3,13 +3,13 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
-  base: "/online-help-vuepress-hope/",
+  base: "/online-help/",
 
   locales: {
     "/": {
       lang: "en-US",
       title: "EhLib.VCL Developer’s guide",
-      description: "A docs demo for vuepress-theme-hope",
+      description: "EhLib.VCL Developer’s guide",
     },
     // "/zh/": {
     //   lang: "zh-CN",

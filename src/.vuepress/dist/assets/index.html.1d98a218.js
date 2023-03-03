@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as t,a as n}from"./app.ac77cf73.js";const c={},s=n("p",null,"#EhLib Type of Columns in TDBGridEh",-1),_=[s];function r(i,a){return o(),t("div",null,_)}const f=e(c,[["render",r],["__file","index.html.vue"]]);export{f as default};

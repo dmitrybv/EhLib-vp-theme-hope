@@ -1,1 +1,0 @@
-import{_ as t}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as s,a as e}from"./app.ac77cf73.js";const n={},_=e("p",null,"//sidebar: false //order: false",-1),c=e("p",null,"Test",-1),r=[_,c];function a(l,d){return o(),s("div",null,r)}const m=t(n,[["render",a],["__file","index.html.vue"]]);export{m as default};
