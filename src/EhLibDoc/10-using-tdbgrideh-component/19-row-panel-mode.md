@@ -14,22 +14,22 @@ To change position of cell you need to press right mouse button on the title cel
 Additional subproperies of the `RowPanel` property:
 
  `NavKeysNavigationType: TGridRowPanelNavKeysNavigationTypeEh` defines the order of navigation over cells in the grid when keys `Up`, `Down`, `Left`, `Right` are pressed.
- <dd>
+ <sh>
 
  `rpntRowToRowEh` - (by default) Keys Up, Down move current cell to next or previous record of dataset. Keys Left, Right works as Tab and Shift-Tab.
 
  `rpntCellToCellEh` -	Keys Up, Down move current cell to under or above last position from the current cell. Keys Left, Right move current cell to left or right position from the current cell.
-</dd>
+</sh>
  
  `TabNavigationType: TGridRowPanelTabNavigationTypeEh` defines an order of going through cells of the grid by Tab key
 
- <dd>
+ <sh>
 
 `rpntUpToDownPriorityEh` Go, at first, from top to bottom, than from left to right.
 
 `rpntLeftToRightPriorityEh` Go, at first, from left to right, than from top to bottom.
 
-</dd>
+</sh>
 
 In the current implementation, the `RowPanel` mode is not compatible with the `MultiTitle` header mode.
 If `RowPanel` is enabled, then `MultiTitle` headers are disabled automatically.

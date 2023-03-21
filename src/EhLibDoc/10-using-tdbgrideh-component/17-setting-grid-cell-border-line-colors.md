@@ -14,43 +14,43 @@ Using sub-properties of this property you can control the color of the dark line
 
 Sub-properties of the property `TDBGridEh.GridLineParams`:
 
-<dl><dd>
+<dl><sh>
 
 `DarkColor: TColor`
 
-<dl><dd>
+<dl><sh>
 Color dark lines. Used for areas of fixed cells, as well as areas within the meaning of which is meant shading dark lines.
 clDefault value determines what color will be determined automatically based on the current color scheme, the properties of Grid.Flat and activity of global change `Themes.Active`
-</dd></dl>
+</sh></dl>
 
 `BrightColor: TColor`
 
-<dl><dd>
+<dl><sh>
 Color bright lines. Used for data areas, and areas within the meaning of which is meant shading light lines.
 clDefault value determines the color will be automatically detected similarly DarkColor
-</dd></dl>
+</sh></dl>
 
 `DataVertColor: TColor`
-<dl><dd>Color vertical lines in the data area</dd></dl>
+<dl><sh>Color vertical lines in the data area</sh></dl>
 
 `DataVertLines: Boolean`
-<dl><dd>The existence of vertical lines in the data.</dd></dl>
+<dl><sh>The existence of vertical lines in the data.</sh></dl>
 
 `DataHorzColor: TColor`
-<dl><dd>Color of the horizontal lines in the data area.</dd></dl>
+<dl><sh>Color of the horizontal lines in the data area.</sh></dl>
 
 `DataHorzLines: Boolean`
-<dl><dd>The presence of horizontal lines in the data.</dd></dl>
+<dl><sh>The presence of horizontal lines in the data.</sh></dl>
 
 `DataBoundaryColor: TColor`
-<dl><dd>Painted boundary lines grid (not to be confused with the client area) color DarkColor.</dd></dl>
+<dl><sh>Painted boundary lines grid (not to be confused with the client area) color DarkColor.</sh></dl>
 
 `GridBoundaries: Boolean`
-<dl><dd>Paint boundary lines grid (not to be confused with the client area) color DarkColor</dd></dl>
+<dl><sh>Paint boundary lines grid (not to be confused with the client area) color DarkColor</sh></dl>
 
 `ColorScheme: TDBGridLinesColorSchemeEh`
 
-<dl><dd>
+<dl><sh>
 
 Property determines the color scheme used to draw the dividing lines for which a color clDefault.
 Property can contain the following values:
@@ -63,12 +63,12 @@ Property can contain the following values:
 
 `glcsThemedEh`
 
-</dd></dl>
+</sh></dl>
 
 
 `VertEmptySpaceStyle: TDrawEmptySpaceStyle`
 
-<dl><dd>
+<dl><sh>
 
 `VertEmptySpaceStyle` property specifies the mode of filling lines and columns for the empty space between the last record of the grid and the bottom of the window.
 
@@ -80,9 +80,9 @@ Property can contain the following values:
 
 `dessGradiendEh` - use gradient shading solid dividing lines and colors of the columns.
 
-</dd></dl>
+</sh></dl>
 
-</dd></dl>
+</sh></dl>
 
 The colors and the lines in the header area:
 ```pascal:no-line-numbers

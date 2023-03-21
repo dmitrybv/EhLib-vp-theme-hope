@@ -14,7 +14,7 @@
 To identify type of changing of record you need to use `UpdateStatus` method and `StatusFilter` property:
 
 `UpdateStatus` indicates a type of changing of current record in `MemTable`. It returns one of the following values:
-<dd>
+<sh>
 
 `usUnmodified` - Indicates that the current record haven’t been changed.
 
@@ -24,12 +24,12 @@ To identify type of changing of record you need to use `UpdateStatus` method and
 
 `usDeleted` - Indicates that the record was removed.
 
-</dd>
+</sh>
 <br>
 
 `StatusFilter` defines filter for different types of records. `StatusFilter` – is a set that can contains any combination of the following values:
 
-<dd>
+<sh>
 
 `usUnmodified` – Unmodified records are visible in MemTable.
 
@@ -39,7 +39,7 @@ To identify type of changing of record you need to use `UpdateStatus` method and
 
 `usDeleted` – Deleted record are visible in MemTable.
 
-</dd>
+</sh>
 
 By default, `StatusFilter` have [usModified, usInserted, usUnmodified] value. So, deleted records are hidden.
 

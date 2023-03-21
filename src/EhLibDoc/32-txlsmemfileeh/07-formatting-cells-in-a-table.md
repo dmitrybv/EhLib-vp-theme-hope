@@ -55,45 +55,45 @@ Demo2
 Use the following `IXlsFileCellsRangeEh` interface properties to set other format properties:
 
 `property Font: TXlsFileCellsRangeFontEh;`
-<dd>Sets the font properties for the selected range.</dd>
+<sh>Sets the font properties for the selected range.</sh>
 <br>
 
 `property Fill: TXlsFileCellsRangeFillEh;`
-<dd>Sets the cell shading properties for the selected range.</dd>
+<sh>Sets the cell shading properties for the selected range.</sh>
 <br>
 
 `property Border: TXlsFileCellsRangeLinesEh;`
-<dd>Sets the properties of the colors and the width of the dividing lines of the cells for the selected range.</dd>
+<sh>Sets the properties of the colors and the width of the dividing lines of the cells for the selected range.</sh>
 <br>
 
 `property HorzAlign: TXlsFileCellHorzAlign;`
-<dd>Sets the horizontal text in cells for the selected range.</dd>
+<sh>Sets the horizontal text in cells for the selected range.</sh>
 <br>
 
 `property VertAlign: TXlsFileCellVertAlign;`
-<dd>Specifies the vertical alignment of text in cells for the selected range.</dd>
+<sh>Specifies the vertical alignment of text in cells for the selected range.</sh>
 <br>
 
 `property WrapText: Boolean;`
-<dd>Specifies whether the text should be wrapped but a new line if the text does not fit into the width of the cell.</dd>
+<sh>Specifies whether the text should be wrapped but a new line if the text does not fit into the width of the cell.</sh>
 <br>
 
 `property Rotation: Integer; //Degrees`
-<dd>Specifies the rotation of the text.</dd>
+<sh>Specifies the rotation of the text.</sh>
 <br>
 
 `property Indent: Integer;`
-<dd>Sets the indentation of the text to the left inside the cell.</dd>
+<sh>Sets the indentation of the text to the left inside the cell.</sh>
 <br>
 
 `property CharsFlowDirection: TXlsFileCharsFlowDirectionEh;`
-<dd>Specifies how the letters of the text are positioned relative to each other.</dd>
+<sh>Specifies how the letters of the text are positioned relative to each other.</sh>
 <br>
 
 `property NumberFormat: String read GetNumberFormat write SetNumberFormat;`
-<dd>
+<sh>
 Specifies the number format for cells that contain numbers or date / time. The format is set according to the rules of MS Excel.
 For a description of the number format, see the MS Excel documentation.
 https://support.microsoft.com/en-us/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68
-</dd>
+</sh>
 <br>

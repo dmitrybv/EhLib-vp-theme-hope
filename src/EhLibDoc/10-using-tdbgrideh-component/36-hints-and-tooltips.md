@@ -9,25 +9,25 @@ In `Tooltips` it is usually displayed the full text, which is not fully fit in t
 To display Tooltips'ov `DBGridEh` use in the following properties properties:
 
 `property DBGridEh.ShowHint: Boolean` 
-<dd>Show hints and Tooltips in the grid.</dd>
+<sh>Show hints and Tooltips in the grid.</sh>
 
 `property Column.ToolTips: Boolean` 
-<dd>Show tooltips in the column data cells.</dd>
+<sh>Show tooltips in the column data cells.</sh>
 
 `property Column.Title.ToolTips: Boolean` 
-<dd>Show tooltips in the column header.</dd>
+<sh>Show tooltips in the column header.</sh>
 
 `property Column.Title.Hint: String` 
-<dd>Hint text for the column header.</dd>
+<sh>Hint text for the column header.</sh>
 
 `property Column.Footer.ToolTips: Boolean` 
-<dd>Show tooltips in the column footer cell.</dd>
+<sh>Show tooltips in the column footer cell.</sh>
 
 `property DBGridEh.ColumnDefValues.ToolTips: Boolean` 
-<dd>Show tooltips in the cells of all the data column grid.</dd>
+<sh>Show tooltips in the cells of all the data column grid.</sh>
 
 `property DBGridEh.ColumnDefValues.Title.ToolTips: Boolean` 
-<dd>Show tooltips titles of all columns grid.</dd>
+<sh>Show tooltips titles of all columns grid.</sh>
 <br>
 
 You can use the `Column.OnDataHintShow` or `DBGridEh.OnDataHintShow` event for dynamic formation of `Hint` or `Tooltipos` for data cells. Use these events to set the text font, color, position or other parameters of the info window (hint) for each cell in the column grid. These events will be called only if `Grid.ShowHint` set to True. At the time of the call event grid will set the current record in the dataset according to the number of grid lines, so that you can access data record. You can call the method for standard event processing `DBGridEh.DefaultFillDataHintShowInfo`.
@@ -40,51 +40,51 @@ TDBGridEh.STFilter
 
 `InstantApply: Boolean`
 
-<dd>Defines if filter will be applied on chanching or clising of droped down list of filtered values (STFilter)</dd>
+<sh>Defines if filter will be applied on chanching or clising of droped down list of filtered values (STFilter)</sh>
 
 `Local: Boolean`
 
-<dd>Grid does not use it, but object that perform filtering can determine whether it will filter locally in dataset or on the server (by adding filter expressions in SQL 'WHERE' clause)</dd>
+<sh>Grid does not use it, but object that perform filtering can determine whether it will filter locally in dataset or on the server (by adding filter expressions in SQL 'WHERE' clause)</sh>
 
 `Location: TSTFilterLocationEh`
 
-<dd>Defines the location STFilter. Under the title (stflUnderTitleFilterEh) or in the title (stflInTitleFilterEh). When in the title then STFilter doesn't support edit line to enter filter expression.</dd>
+<sh>Defines the location STFilter. Under the title (stflUnderTitleFilterEh) or in the title (stflInTitleFilterEh). When in the title then STFilter doesn't support edit line to enter filter expression.</sh>
 
 `Visible: Boolean`
 
-<dd>Specifies whether the filter row is visible. </dd>
+<sh>Specifies whether the filter row is visible. </sh>
 
 `Color: TColor`
 
-<dd>Specifies the background color for the title cells.</dd>
+<sh>Specifies the background color for the title cells.</sh>
 
 `Font: TFont`
-<dd>Controls the font in which the title cells displays its data.</dd>
+<sh>Controls the font in which the title cells displays its data.</sh>
 
 `ParentFont: Boolean`
 
-<dd>Determines where a control looks for its font information.</dd>
+<sh>Determines where a control looks for its font information.</sh>
 
 `HorzLineColor: TColor`
 
-<dd>Color of the horizontal lines in the footer area.</dd>
+<sh>Color of the horizontal lines in the footer area.</sh>
 
 `RowHeight: Integer`
 
-<dd>Specifies the height of footer row in text lines.</dd>
+<sh>Specifies the height of footer row in text lines.</sh>
 
 `RowLines: Integer`
 
-<dd>
+<sh>
   Specifies the height of footer row in text lines
   Full row height = height in pixels of RowLines + RowHeight.
-</dd>
+</sh>
 
 `VertLineColor: TColor`
 
-<dd>Color vertical lines in the footer area.</dd>
+<sh>Color vertical lines in the footer area.</sh>
 
 `FilterButtonDrawTime: TDBGridFilterButtonDrawTimeEh`
 
-<dd>Specifies when it is to draw buttons for DropedDown filter list.</dd>
+<sh>Specifies when it is to draw buttons for DropedDown filter list.</sh>
 

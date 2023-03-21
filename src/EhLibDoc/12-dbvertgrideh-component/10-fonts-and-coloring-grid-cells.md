@@ -11,11 +11,11 @@ Here is a list of events that you can use to customize the font attributes and c
 
 `TDBVertGridEh.OnGetCellParams`
 
-<dd>Use this event to replace the font settings and the background color of the cell before rendering. Event parameters are similar to the events for TDBGridEh.OnGetCellParams.</dd>
+<sh>Use this event to replace the font settings and the background color of the cell before rendering. Event parameters are similar to the events for TDBGridEh.OnGetCellParams.</sh>
 
 `TFieldRowEh.OnGetCellParams`
-<dd>Use this event to replace the cell parameters a particular column before rendering. Parameters are similar to the events soybtiya TColumnEh.OnGetCellParams.</dd>
+<sh>Use this event to replace the cell parameters a particular column before rendering. Parameters are similar to the events soybtiya TColumnEh.OnGetCellParams.</sh>
 
 `TDBVertGridEh.OnAdvDrawDataCell` and `TFieldRowEh.OnAdvDrawDataCell`
 
-<dd>Use this event to draw the data in the data cells of the grid. The event code set Processed argument to True to specify that you have handled the process of drawing. If Processed leave False, the grid method will render the contents of a cell using default method. You can, if necessary, change the ARect and Params and cause Grid.DefaultDrawRowDataCell or leave Processed able to False and do not induce Grid.DefaultDrawRowDataCell. To change the data output to the screen, use the event parameters Params and Grid.Canvas if you draw a cell data function on their own using GDI.</dd>
+<sh>Use this event to draw the data in the data cells of the grid. The event code set Processed argument to True to specify that you have handled the process of drawing. If Processed leave False, the grid method will render the contents of a cell using default method. You can, if necessary, change the ARect and Params and cause Grid.DefaultDrawRowDataCell or leave Processed able to False and do not induce Grid.DefaultDrawRowDataCell. To change the data output to the screen, use the event parameters Params and Grid.Canvas if you draw a cell data function on their own using GDI.</sh>

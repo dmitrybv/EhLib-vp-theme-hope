@@ -5,70 +5,70 @@
 
 The property has a set of type and can contain the following values.
 
-<dl><dd>
+<dl><sh>
 
 `dgEditing `
-<dl><dd>
+<dl><sh>
 The grid is allowed to open the text editor by Enter or F2 key.
-</dd></dl>
+</sh></dl>
 
 `dgAlwaysShowEditor`
-<dl><dd>
+<dl><sh>
 Always display the text editor of the cell during the moving from cell to line.
-</dd></dl>
+</sh></dl>
 
 `dgTitles`
-<dl><dd>
+<dl><sh>
 Show title row.
-</dd></dl>
+</sh></dl>
 
 `dgIndicator`
-<dl><dd>
+<dl><sh>
 Show Indicator column.
-</dd></dl>
+</sh></dl>
 
 `dgColumnResize`
-<dl><dd>
+<dl><sh>
 Allow resize and move columns.
-</dd></dl>
+</sh></dl>
 
 `dgColLines`
-<dl><dd>
+<dl><sh>
 Draw vertical dividing lines.
-</dd></dl>
+</sh></dl>
 
 `dgRowLines`
-<dl><dd>
+<dl><sh>
 Draw horizontal dividing lines.
-</dd></dl>
+</sh></dl>
 
 `dgRowSelect`
-<dl><dd>
+<dl><sh>
 Select the entire row of the grid instead of a single cell.
-</dd></dl>
+</sh></dl>
 
 `dgAlwaysShowSelection`
-<dl><dd>
+<dl><sh>
 Always draw a selection on the grid. When the grid does not have the input focus, the area will be displayed in gray color.
-</dd></dl>
+</sh></dl>
 
 `dgConfirmDelete`
-<dl><dd>
+<dl><sh>
 Show confirmation window before removing the record on Ctrl + Delete.
-</dd></dl>
+</sh></dl>
 
 `dgCancelOnExit`
-<dl><dd>
+<dl><sh>
 Cancel “Edit Mode” using DataSet.Cancel if DataSet was set in append mode, but user did not do any changes to the row.
-</dd></dl>
+</sh></dl>
 
 `dgMultiSelect`
-<dl><dd>
+<dl><sh>
 
 Allow select areas in the grid. For more information, see. In the 
 [Multiselect](45-multiselect.md) section.
-</dd></dl>
-</dd></dl>
+</sh></dl>
+</sh></dl>
 <br>
 
 **`property OptionsEh: TDBGridEhOption`**
@@ -76,124 +76,124 @@ Allow select areas in the grid. For more information, see. In the
 The property has a set of type and can contain the following values:
 
 `dghFixed3D`
-<dl><dd>
+<dl><sh>
 Draw a border around the 3D cells fixed grid area.
-</dd></dl>
+</sh></dl>
 
 `dghFrozen3D`
-<dl><dd>
+<dl><sh>
 Draw a border around the 3D cells frozen area.
-</dd></dl>
+</sh></dl>
 
 `dghFooter3D`
-<dl><dd>
+<dl><sh>
 Draw a border around the 3D cells footer.
-</dd></dl>
+</sh></dl>
 
 `dghData3D`
-<dl><dd>
+<dl><sh>
 Draw 3D border around the cells containing the data records DataSet.
-</dd></dl>
+</sh></dl>
 
 `dghResizeWholeRightPart`
-<dl><dd>
+<dl><sh>
 In the AutoFitColWidths.
-</dd></dl>
+</sh></dl>
 
 `dghHighlightFocus`
-<dl><dd>
+<dl><sh>
 Highlight the current cell by color or thems style.
-</dd></dl>
+</sh></dl>
 
 `dghClearSelection`
-<dl><dd>
+<dl><sh>
 Clear selection mode MultiSelect when the Grid moves from cell to cell using the keyboard.
-</dd></dl>
+</sh></dl>
 
 `dghFitRowHeightToText`
-<dl><dd>
+<dl><sh>
 When RowSizingAllowed = True, determines a change row heights to customize the height of the mouse so that they always get the exact number of lines of text without clipping.
-</dd></dl>
+</sh></dl>
 
 `dghAutoSortMarking`
-<dl><dd>
+<dl><sh>
 Change markers of sorting by clicking on the title which TitleButton = True.
-</dd></dl>
+</sh></dl>
 
 `dghMultiSortMarking`
-<dl><dd>
+<dl><sh>
 Allows set markers sorting multiple columns at once, to set markers sorting Run-Time, the user must press and hold down the Ctrl key.
-</dd></dl>
+</sh></dl>
 
 `dghEnterAsTab`
-<dl><dd>
+<dl><sh>
 Enter key behaves key Tab, that is, calls go to the next cell.
-</dd></dl>
+</sh></dl>
 
 `dghTraceColSizing`
-<dl><dd>
+<dl><sh>
 When dghColumnResize value is set then this value determines that it is necessary to change the size of the column with the mouse while moving the mouse. If the data value is not set, the size of the column will change after you release the mouse button.
-</dd></dl>
+</sh></dl>
 
 `dghIncSearch`
-<dl><dd>
+<dl><sh>
 Allowed transition incremental search mode by Ctrl + F button
-</dd></dl>
+</sh></dl>
 
 `dghPreferIncSearch`
-<dl><dd>
+<dl><sh>
 If set dghIncSearch, the installation of this value determines the need vlyuchaet incremental search mode immediately by pressing any letter key numeric keypad. If this value is not set, the switch-over to incremental search only after pressing a combination of Ctrl + F.
-</dd></dl>
+</sh></dl>
 
 `dghRowHighlight`
-<dl><dd>
+<dl><sh>
 Highlight the entire row of the grid. Unlike RowSelect, mode RowHighlight notion of the current cell remains.
-</dd></dl>
+</sh></dl>
 
 `dghDblClickOptimizeColWidth`
-<dl><dd>
+<dl><sh>
 Optimize column width so that the column until all text cell by double-clicking on the vertical dividing line header.
-</dd></dl>
+</sh></dl>
 
 `dghDialogFind`
-<dl><dd>
+<dl><sh>
 Allow search in the search grid through dialogue. Search dialog is opened by pressing the Ctrl + F.
-</dd></dl>
+</sh></dl>
 
 `dghRecordMoving`
-<dl><dd>
+<dl><sh>
 Allow moving records by mouse.
-</dd></dl>
+</sh></dl>
 
 `dghShowRecNo`
-<dl><dd>
+<dl><sh>
 Show record number in the column indicator.
-</dd></dl>
+</sh></dl>
 
 `dghColumnResize`
-<dl><dd>
+<dl><sh>
 Allow the mouse to resize the column.
-</dd></dl>
+</sh></dl>
 
 `dghColumnMove`
-<dl><dd>
+<dl><sh>
 Allow the mouse to move the columns.
-</dd></dl>
+</sh></dl>
 
 `dghAutoFitRowHeight`
-<dl><dd>
+<dl><sh>
 Adjust the height of the row so that each cell until all text.
-</dd></dl>
+</sh></dl>
 
 `dghHotTrack`
-<dl><dd>
+<dl><sh>
 Highlight the cell on which the mouse cursor.
-</dd></dl>
+</sh></dl>
 
 `dghExtendVertLines`
-<dl><dd>
+<dl><sh>
 Is extended until the end of the vertical lines of the grid down.
-</dd></dl>
+</sh></dl>
 <br>
 <br>
 

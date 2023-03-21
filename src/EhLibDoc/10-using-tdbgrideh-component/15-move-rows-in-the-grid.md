@@ -24,16 +24,16 @@ When you release the mouse button, the grid also raises the OnMoveRecords event 
 The following parameters are also passed to the event:
 
 `BookmarkList: TBMListEh`
-<dd>The list of selected entries that follow move.</dd>
+<sh>The list of selected entries that follow move.</sh>
 <br>
 
 
 `ToRecNo: Longint;`
-<dd>Number of records to which you plan or follow the move data.</dd>
+<sh>Number of records to which you plan or follow the move data.</sh>
 <br>
 
 `TreeLevel: Integer;`
-<dd>The level in the tree to which you plan or follow the move data. This parameter is used only when TMemTableEh is in tree mode.</dd>
+<sh>The level in the tree to which you plan or follow the move data. This parameter is used only when TMemTableEh is in tree mode.</sh>
 <br>
 
 

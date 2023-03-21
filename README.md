@@ -92,7 +92,7 @@ index: false - не показывать страницу в sidebar
 &nbsp is the Non Breaking Space
 &emsp is a wide kind of space
 
-#Про Git
+# Про Git
 Если добавил папку в .gitignore она автоматисески не удаляется и из репозитория.
 Для удаления папок из репозитория которые появились в .gitignore, нобходимо выполнить команды
 
@@ -106,3 +106,16 @@ $ git add .
 # ...and commit them!
 $ git commit -m "Clean up ignored files"
 ```
+
+# Про тег sh
+В MD используется нестандартный тег `sh`
+На самом деле это `vue` компонент, 
+который реализован в файле `sh.vue`
+
+Подлкючение файла к проекту настроено в config.ts - 
+  plugins: 
+     registerComponentsPlugin.
+
+
+# Next
+...

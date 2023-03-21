@@ -182,24 +182,24 @@ Another example of the use of dynamic loading of language resources can be seen 
 The main methods used in the project for working with language resources are as follows:
 
 `procedure AppLangConsts.InitUnit;`
-<dd>Registers the class TApplicationLanguageConsts in which the application's string resources will be stored.</dd>
+<sh>Registers the class TApplicationLanguageConsts in which the application's string resources will be stored.</sh>
 <br>
 
 `procedure TForm1.InitLanguageRes;`
-  <dd>Loads the list of available languages.<br/>
-Activates the language from the Ini file if it was selected the last time the program was started.</dd>
+  <sh>Loads the list of available languages.<br/>
+Activates the language from the Ini file if it was selected the last time the program was started.</sh>
 <br>
 
 `procedure TForm1.BuildLanguageMenu;`
-<dd>Forms a menu of available languages based on the LanguageResourceManagerEh.LanguageList object</dd>
+<sh>Forms a menu of available languages based on the LanguageResourceManagerEh.LanguageList object</sh>
 <br>
 
 `procedure TForm1.MenuItemSelectLanguage(Sender: TObject);`
-<dd>Loads files of a new language when the user selects another language in the menu.</dd>
+<sh>Loads files of a new language when the user selects another language in the menu.</sh>
 <br>
 
 `procedure TForm1.ResourceLanguageChanged;`
-<dd>Assigns properties and form variables when the language has been changed.</dd>
+<sh>Assigns properties and form variables when the language has been changed.</sh>
 <br>
 
 

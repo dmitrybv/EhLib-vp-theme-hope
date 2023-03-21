@@ -15,7 +15,7 @@ Area of additional information may include the following:
 
  
 Use the sub-property DBGridEh.HorzScrollBar.ExtraPanel management options to display extra panel:
-<dd>
+<sh>
 
 `Visible: Boolean`
 Set the Visible property to True to display additional panel horizontal ScrollBar
@@ -31,6 +31,6 @@ Use VisibleItems property to determine which items will be visible in the panel.
 
 `TGridSBItemEh = (gsbiRecordsInfoEh, gsbiNavigator, gsbiFindEditorEh, gsbiSelAggregationInfoEh);`
 `TGridSBItemsEh = set of TGridSBItemEh;`
-</dd>
+</sh>
 Displaying the search for extra-panel runner is configured through the properties of the search bar Grid.SearchPanel.
 Clicking on the navigation button event fires NavigatorPanelButtonClick event. The event is passed the type of button – AButton: TNavigateBtnEh. In the event handler, you can set the Processed parameter to True to avoid calling of the default handler.

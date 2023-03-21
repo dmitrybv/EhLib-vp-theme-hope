@@ -8,23 +8,23 @@ This row will be active when lookup field or `LookupComboBox` has value that is 
 `TSpecRowEh` contains next properties:
 
 `CellsText: String`
-<dd>Specifies the text(s) that will be shown in the drop-down window for SpecRow. When dropdown box have more than one columns, use semicolon to separate text for each column.</dd>
+<sh>Specifies the text(s) that will be shown in the drop-down window for SpecRow. When dropdown box have more than one columns, use semicolon to separate text for each column.</sh>
 
 `Color: TColor`
-<dd>Background color of special row in dropdown box.</dd>
+<sh>Background color of special row in dropdown box.</sh>
 
 `Font: TFont`
-<dd>Font of special row text.</dd>
+<sh>Font of special row text.</sh>
 
 `Value: Variant`
-<dd>Value. Special row is shown as selected (highlighted) when this Value is equal to value of control to which this special row belong to.</dd>
+<sh>Value. Special row is shown as selected (highlighted) when this Value is equal to value of control to which this special row belong to.</sh>
 
 `Visible: Boolean`
-<dd>Specify, whether the spec row is active and visible in the DropDown box.</dd>
+<sh>Specify, whether the spec row is active and visible in the DropDown box.</sh>
 
 `ShortCut: TShortCut`
-<dd>Specify the shortcut for assigning value of SpecRow.Value property to Control value.</dd>
+<sh>Specify the shortcut for assigning value of SpecRow.Value property to Control value.</sh>
 
 `ShowIfNotInKeyList: Boolean`
-<dd>Specify, whether the SpecRow text will be shown in Control if the value of the control is not in list of key values.</dd>
+<sh>Specify, whether the SpecRow text will be shown in Control if the value of the control is not in list of key values.</sh>
  

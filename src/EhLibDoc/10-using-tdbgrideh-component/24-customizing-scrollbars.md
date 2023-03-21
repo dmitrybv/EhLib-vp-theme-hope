@@ -25,7 +25,7 @@ It must return `0` if `bookmark1` and `bookmark2` points to the same record, and
 
 You can control the horizontal and vertical scrolling bar using the `Grid.VertScrollBar` and `Grid.HorzScrollBar` properties of `TGridScrollBarEh` type. 
 The `TGridScrollBarEh` class contains the following properties:
-<dd>
+<sh>
 
 `Tracking: Boolean`
 Specifies whether or not the position in the grid to change immediately when user change the position of the slider when the user clicked the mouse and drags the slider.
@@ -39,7 +39,7 @@ Sets the scroll step of the grid in which the grid is not specified on the borde
 `VisibleMode: TScrollBarVisibleModeEh`
 Sets the scrollbar show mode:
 
-<dl><dd>
+<dl><sh>
 
 `sbAlwaysShowEh` - the scroll bar is always displayed.
 
@@ -47,7 +47,7 @@ Sets the scrollbar show mode:
 
 `sbAutoShowEh` - the scroll bar is displayed only if the grid is not reduced in the visible area of the client window.
 
-</dd></dl> 
+</sh></dl> 
 
 `Height: Integer`
 For the horizontal scroll bar sets the height of the strip. For vertical property is not available.
@@ -75,6 +75,6 @@ To customize scollbars you need to use subprtoperties of HorzScrollBar and VertS
 
 `sbAutoShowEh`		Shows or hides scrollbar automatically depending on visible area of grid.
 
-</dd>
+</sh>
 
 If `DBGridEh` is connected to `DataSet` of `TMemTableEh` type then on vertical scrolling grid doesn’t change position of active record.

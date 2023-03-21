@@ -22,63 +22,63 @@ Properties and events of the `TDBGridEhCenter` class:
 
 **Properties:**
 
-<dd>
+<sh>
 
 `property FilterEditCloseUpApplyFilter: Boolean;`
 
-<dl><dd>
+<dl><sh>
 
 Determines whether the `SubTitleFilter` will be applied right after choosing value from dropped down list or always need to press Enter key to apply filter.
 
-</dd></dl>
+</sh></dl>
 
 `property IndicatorTitleMenus: TDBGridEhStyleIndicatorTitleMenusEh;`
 
-  <dl><dd>
+  <dl><sh>
 
   Specifies the list of elements, which will be visible in IndicatorTitle of dropped down menu when `TDBGridEh.IndicatorTitle.UseGlobalMenu = True` and `TDBGridEh.IndicatorTitle.TitleButton = True`.
 
 `TDBGridEhStyleIndicatorTitleMenusEh` is a set which consists of following values 
 	itmVisibleColumnsEh	- Display the menu item with list of columns, cliquing on which possible to show or hide column.
-	<dl><dd>`itmCut`		- Display Cut menu item</dd></dl>
-	<dl><dd>`itmCopy`		- Display Copy menu item</dd></dl>
-	<dl><dd>`itmPaste`		- Display Paste menu item</dd></dl>
-	<dl><dd>`itmDelete`		- Display Delete menu item</dd></dl>
-	<dl><dd>`itmSelectAll`	- Display SelectAll menu item</dd></dl>
+	<dl><sh>`itmCut`		- Display Cut menu item</sh></dl>
+	<dl><sh>`itmCopy`		- Display Copy menu item</sh></dl>
+	<dl><sh>`itmPaste`		- Display Paste menu item</sh></dl>
+	<dl><sh>`itmDelete`		- Display Delete menu item</sh></dl>
+	<dl><sh>`itmSelectAll`	- Display SelectAll menu item</sh></dl>
 
-  </dd></dl>
+  </sh></dl>
 
-</dd>
+</sh>
 
 **Events:**
 
-<dd>
+<sh>
 
 ```pascal:no-line-numbers
 OnApplyFilter: TNotifyEvent;
 ```
 
-<dl><dd>
+<dl><sh>
 
 This event is called when grid apply `SubTitleFilter`. `Sender` parameter is a grid that applies filter. In the handler of event you can call default handler - `DBGridEhCenter.DefaultApplyFilter`.
 
-</dd></dl>
+</sh></dl>
 
 ```pascal:no-line-numbers
 OnApplySorting: TNotifyEvent;
 ```
 
-<dl><dd>
+<dl><sh>
 
 This event is called when grid apply sorting. `Sender` parameter is a grid that applies sorting. In the event handler you can call default handler - `DBGridEhCenter.DefaultApplySorting`.
 
-</dd></dl>
+</sh></dl>
 
 ```pascal:no-line-numbers
 OnBuildIndicatorTitleMenu: TDBGridEhBuildIndicatorTitleMenu;
 ```
 
-<dl><dd>
+<dl><sh>
 
 This event occurs when grid forms the dropped down menu that appears when mouse is clicked on the upper left cell of grid. Event occurs if `TDBGridEh.IndicatorTitle.TitleButton` = `True`. Sender parameter is a grid in which `IndicatorTitle` button was pressed. `PopupMenu` parameter is a menu that will is displayed under cell. You can call default handler that build menu items by default:
 `DBGridEhCenter.DefaultBuildIndicatorTitleMenu(Grid, PopupMenu);`
@@ -139,7 +139,7 @@ end;
 <br>
 <br>
 
-</dd></dl>
+</sh></dl>
 
 
 ```pascal:no-line-numbers
@@ -147,9 +147,9 @@ property OnCellMouseClick: TGridEhCellMouseEvent;
    type  TGridEhCellMouseEvent = procedure (Grid: TCustomGridEh; Cell: TGridCoord;
     Button: TMouseButton; Shift: TShiftState; X, Y: Integer) of object;
 ```
-<dl><dd>
+<dl><sh>
 This event occurs on mouse clicking in any cell of the grid. Event has such parameters: Grid; coordinates of the cell (Cell); Button, which was pressed on mouse (Button); Shift state of keyboard (Shift) and coordinates of the clicked point inside cell (X, Y). In the handler of event you can call the default handler - DBGridEhCenter.DefaultCellMouseClick.
-</dd></dl>
+</sh></dl>
 <br>
 
 ```pascal:no-line-numbers
@@ -157,9 +157,9 @@ property OnIndicatorTitleMouseDown: TGridEhCellMouseEvent;
    type  TGridEhCellMouseEvent = procedure (Grid: TCustomGridEh; Cell: TGridCoord;
     Button: TMouseButton; Shift: TShiftState; X, Y: Integer) of object;
 ```
-<dl><dd>
+<dl><sh>
 	This event occurs when the mouse click on upper left cell of the grid occurs. In the handler of event you can call default handler - DBGridEhCenter.DefaultIndicatorTitleMouseDown.
-</dd></dl>
+</sh></dl>
 <br>
 	
 ```pascal:no-line-numbers
@@ -172,38 +172,38 @@ type  TLocateTextEventEh = function (Sender: TObject;
   TreeFindRange: TLocateTextTreeFindRangeEh): Boolean of object;
 ```
 
-<dl><dd>
+<dl><sh>
 This event occurs during increment or dialogue searching in the grid.
-</dd></dl>
+</sh></dl>
 <br>
 
-</dd>
+</sh>
 
 ### The General information about `TDBGridEhStyle` class
 
 To access elements the global `DBGridEhStyle` object use function:
 
 `function DBGridEhStyle: TDBGridEhStyle;`
-<dl><dd>
+<dl><sh>
 It returns the current object of the type TDBGridEhStyle, which controls imaging of all grids. You can inherit TDBGridEhStyle, overwrite virtual methods controlling image of the grid, and register new object to manage, using next function:
-</dd></dl>
+</sh></dl>
 
 `function SetDBGridEhStyle(NewGridStyle: TDBGridEhStyle): TDBGridEhStyle;`
-<dl><dd>
+<dl><sh>
 Call this function to set new object of image controlling. It returns old object.  In most cases it is necessary to delete old object.
-</dd></dl>
+</sh></dl>
 <br>
 
 Properties of the `TDBGridEhStyle` class:
 
 `property LuminateSelection: Boolean default True;`
-<dl><dd>
+<dl><sh>
 
 This property determines whether need to illuminate the selected area in grid. If `LuminateSelection = False` then the selected area will be painted by `clHighlight` color. If `LuminateSelection = True` then selected area will be painted by method as if you see on the area through the transparent glass of the `clHighlight` color.
-</dd></dl>
+</sh></dl>
 	
 `property IsDrawFocusRect: Boolean default True;`
-<dl><dd>
+<dl><sh>
 	This property determines whether to draw pointed square around the current cell or row in the grid.
-</dd></dl>
+</sh></dl>
 

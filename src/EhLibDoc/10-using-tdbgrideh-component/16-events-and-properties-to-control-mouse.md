@@ -13,14 +13,14 @@ If `X, Y` coordinates do not fall in a cell, one of the values or `TGridCoord.X`
 Grid provides a set of events in which the coordinates are transmitted cells in which there was a click.
 
 `TDBGridEh.OnCellClick`
-<dd>
+<sh>
 The event occurs only when you click on the cells in the data section.
 The event is passed a column Column: TColumnEh, which clicked. 
-</dd>
+</sh>
 <br>
 
 `TDBGridEh.OnCellMouseClick`
-<dd>
+<sh>
 The event occurs when user clicks any cell in the grid.
 The event have the following parameters
 
@@ -36,7 +36,7 @@ Cell: TGridCoord		The cell in which the event occurred
 `var Processed: Boolean`	Set Processed in True to indicate that you have been treated in a reaction event and call the default handler is not necessary.
 
 In the event you can call the default handler - `TCustomGridEh.DefaultCellMouseClick`.
-</dd>
+</sh>
 
 Useful methods and properties for obtaining data on the area of the grid in which the event occurred:
 
@@ -48,16 +48,16 @@ function GetCellAreaType(ACol, ARow: Integer;
 get the type of horizontal and vertical grid area in which the event occurred. 
 Horizontally the grid is divided into the following areas:
 
-<dd>
+<sh>
 
  `hctIndicatorEh`	Indicator area
 
  `hctDataEh` 		Data area 
 
-</dd>
+</sh>
 
  Vertically the grid is divided into the following areas:
- <dd>
+ <sh>
 
  `vctTitleEh`		header area
 
@@ -68,14 +68,14 @@ Horizontally the grid is divided into the following areas:
  `vctAboveFooterEh`	The area between the footer and data
 
  `vctFooterEh`		footer area
-  </dd>
+  </sh>
 <br>
 
 `TDBGridEh.OnGetBtnParams`
-<dd>Event occurs by clicking on the header and is used for special painting of a pressed title.</dd>
+<sh>Event occurs by clicking on the header and is used for special painting of a pressed title.</sh>
 
 `TDBGridEh.OnTitleBtnClick`
-<dd>The event is called when you click in the header area that is configured to work as a button. To trigger events in the header the Column.Title.TitleButton property should be set to True.</dd>
+<sh>The event is called when you click in the header area that is configured to work as a button. To trigger events in the header the Column.Title.TitleButton property should be set to True.</sh>
 
 `TDBGridEh.OnTitleClick`
-<dd>The event is called when you click in the header area.</dd>
+<sh>The event is called when you click in the header area.</sh>

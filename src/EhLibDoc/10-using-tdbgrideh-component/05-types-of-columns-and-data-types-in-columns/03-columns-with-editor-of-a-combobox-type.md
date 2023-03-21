@@ -31,10 +31,10 @@ In this mode, the data for the list are set through a field TField justified as 
 Use the following properties of TColumnEh (or TFieldRow for DBVertGridEh) for advanced configuration and work with LookupCombobox and DataList Combobox:
 
 `TColumnEh.CaseInsensitiveTextSearch`
-<dd>Specifies that the text search in the drop down list is case-insensitive.</dd>
+<sh>Specifies that the text search in the drop down list is case-insensitive.</sh>
 
 
 `TColumnEh.LimitTextToListValues`
-<dd>limits the ability to enter text only by a text from the list.</dd>
+<sh>limits the ability to enter text only by a text from the list.</sh>
 
 If `TColumnEh.LimitTextToListValues = False`, then after you enter the text that is not in the list and attempt to leave the cell, or press `Enter` the `TColumnEh.OnNotInList` event is triggered. The event handler is passed the entered text – `NewText` argument. You can add text to the list. If the list is based on data from the `DataSet`, the new value should be added in the `DataSet`. After values is added in the `DataSet` set `RecheckInList` property to `True`. For `Combobox` of `LookupCombobox` type the grid re-perform lookup search the list and write the data to the cell.

@@ -5,62 +5,62 @@
 Property type set. It may contain the following values.
 
 <dl>
-<dd>
+<sh>
 	
 `dgvhEditing`
-<dl><dd>The grid is allowed to open the text editor by clicking on the Enter or F2 Key.</dd></dl>
+<dl><sh>The grid is allowed to open the text editor by clicking on the Enter or F2 Key.</sh></dl>
 	
 `dgvhAlwaysShowEditor`
 <dl>
-	<dd>Always display the text editor of the cell during the transition from line to line.</dd>
+	<sh>Always display the text editor of the cell during the transition from line to line.</sh>
 </dl>
 	
 `dgvhLabelCol`
 <dl>
-	<dd>Display column with header fields.</dd>
+	<sh>Display column with header fields.</sh>
 </dl>
 	
 `dgvhRowResize`
 <dl>
-	<dd>Permission is granted to change the row height using the mouse.</dd>
+	<sh>Permission is granted to change the row height using the mouse.</sh>
 </dl>
 	
 `dgvhRowMove`
 <dl>
-	<dd>Permission is granted to move the line with the mouse.</dd>
+	<sh>Permission is granted to move the line with the mouse.</sh>
 </dl>
 	
 `dgvhColLines`
 <dl>
-	<dd>Draw a vertical dividing lines</dd>
+	<sh>Draw a vertical dividing lines</sh>
 </dl>
 	
 `dgvhRowLines`
 <dl>
-	<dd>Draw a horizontal dividing line</dd>
+	<sh>Draw a horizontal dividing line</sh>
 </dl>
 	
 `dgvhTabs`
 <dl>
-	<dd>Edit the Tab key in the grid. By Tab to move the cursor to the next line.</dd>
+	<sh>Edit the Tab key in the grid. By Tab to move the cursor to the next line.</sh>
 </dl>
 	
 `dgvhAlwaysShowSelection`
 <dl>
-	<dd>Always draw a selection on the grid. When the grid does not have the input focus area will be displayed gray color.</dd>
+	<sh>Always draw a selection on the grid. When the grid does not have the input focus area will be displayed gray color.</sh>
 </dl>
 	
 `dgvhConfirmDelete`
 <dl>
-	<dd>Show confirmation dialog before removing the recording Ctrl + Delete</dd>
+	<sh>Show confirmation dialog before removing the recording Ctrl + Delete</sh>
 </dl>
 	
 `dgvhCancelOnExit`
 <dl>
-	<dd>Exit Edit Mode dataset methods DataSet.Cancel if grid included in append mode recording, but did not do any changes to the rows.</dd>
+	<sh>Exit Edit Mode dataset methods DataSet.Cancel if grid included in append mode recording, but did not do any changes to the rows.</sh>
 </dl>
 
-</dd>
+</sh>
 </dl>
 
 `property OptionsEh: TDBVHGridOptionsEh`
@@ -68,45 +68,45 @@ Property type set. It may contain the following values.
 Property type is set. It may contain the following values.
 
 <dl>
-<dd>
+<sh>
 
 `dgvhHighlightFocusEh`
 
 <dl>
-	<dd>Highlight the current cell color or style.</dd>
+	<sh>Highlight the current cell color or style.</sh>
 </dl>
 	
 `dgvhClearSelectionEh`
 
 <dl>
-	<dd>Clear selection when navigating Grid</dd>
+	<sh>Clear selection when navigating Grid</sh>
 </dl>
 	
 `dgvhEnterToNextRowEh`
 
 <dl>
-	<dd>Go to the next line when you press the VK_ENTER</dd>
+	<sh>Go to the next line when you press the VK_ENTER</sh>
 </dl>
 	
 `dgvhTabToNextRowEh`
 
 <dl>
-	<dd>Go to the next line when you press the VK_TAB</dd>
+	<sh>Go to the next line when you press the VK_TAB</sh>
 </dl>
 	
 `dgvhHotTrackEh`
 
 <dl>
-	<dd>Highlight the cell on which the mouse cursor</dd>
+	<sh>Highlight the cell on which the mouse cursor</sh>
 </dl>
 	
 `dgvhRowsIsTabControlsEh`
 
 <dl>
-	<dd>Set grid lines act as a set of individual controls. Ie it is not allowed to move to the next and previous record using navigation keys. By clicking on the VK_TAB on the last line of the grid control is transferred to the next control on the form in the order TabOrder.</dd>
+	<sh>Set grid lines act as a set of individual controls. Ie it is not allowed to move to the next and previous record using navigation keys. By clicking on the VK_TAB on the last line of the grid control is transferred to the next control on the form in the order TabOrder.</sh>
 </dl>
 
-</dd>
+</sh>
 </dl>
 <br>
 

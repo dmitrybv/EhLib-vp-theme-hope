@@ -29,49 +29,49 @@ Grid uses key value to form string that will be shown in the grouping row. If yo
 Use property Grid.DataGrouping.GroupDataTree to access the items of grouping tree. The property have the TGridGroupDataTreeEh type and is inherited form TTreeListEh. The items of TTreeListEh class form the tree-type structure of groups and references to DataSet records for the lowest levels of grouping. Use properties FlatVisibleCount and FlatVisibleItem[Index] to access items as a flat list. The flat list FlatVisibleItem contain only items which are in the scope of the expanded nodes. Amount of items in flat array corresponds  amount of rows in the grid. Every item of array is a reference to the instance of TGroupDataTreeNodeEh class and defines a node in the grouping tree. Basic properties of this class are:
 
 `Count: Integer`
-<dd>
+<sh>
 Amount of nodes in the group. Nodes can be over groups of lower level or references to dataset records.
-</dd>
+</sh>
 
 `DataGroup: TGridDataGroupLevelEh`
-<dl><dd>
+<dl><sh>
 Reference to item of grouping structure. Not empty if the node is a node of group.
-</dd></dl>
+</sh></dl>
 
 `DataSetRecordViewNo: Integer`
-<dl><dd>
+<dl><sh>
 Number of record in MemTableEh. Not empty if the node is a node of the dataset record.
-</dd></dl>
+</sh></dl>
 
 `Expanded: Boolean`
-<dl><dd>
+<dl><sh>
 Node is expanded.
-</dd></dl>
+</sh></dl>
 
 `Items[Index: Integer]: TGroupDataTreeNodeEh`
-<dl><dd>
+<dl><sh>
 List of nodes of the lower level.
-</dd></dl>
+</sh></dl>
 
 `KeyValue: Variant`
-<dl><dd>
+<dl><sh>
 KeyValue
-</dd></dl>
+</sh></dl>
 
 `Level: Integer`
-<dl><dd>
+<dl><sh>
 The number of node level;
-</dd></dl>
+</sh></dl>
 
 `NodeType: TGroupDataTreeNodeTypeEh`
-<dl><dd>
+<dl><sh>
 Type of the node. The Node of a group level or a record level.
-</dd></dl>
+</sh></dl>
 
 `Parent`
-<dl><dd>
+<dl><sh>
 A pointer to the parent branch.
-</dd></dl>
+</sh></dl>
 <br>
 
 Use Items property of `Grid.DataGrouping.GroupDataTree` to access the grouping tree as a tree-type structure. Every item of this list is a reference to a tree node of grouping of highest level.
@@ -115,27 +115,27 @@ TDBGridEhDataGroupGetGroupRowParamsEvent = procedure (
 ```
 
 `Params` is of `TGroupRowParamsEh` type and has next properties:
- <dl><dd>
+ <dl><sh>
 
 `property Color: TColor` 	 
-<dl><dd>Color of the cell background</dd></dl>
+<dl><sh>Color of the cell background</sh></dl>
 
 `property Font: TFont` 	 
-<dl><dd>Font of the text</dd></dl>
+<dl><sh>Font of the text</sh></dl>
 
 `property Images: TCustomImageList` 
-<dl><dd>ImageList to show images</dd></dl>
+<dl><sh>ImageList to show images</sh></dl>
 
 `property ImageIndex: Integer` 	 
-<dl><dd>Index of a image from the ImageList.</dd></dl>
+<dl><sh>Index of a image from the ImageList.</sh></dl>
 
 `property GroupRowText: String` 	
-<dl><dd>Text to show in the cell of the group</dd></dl>
+<dl><sh>Text to show in the cell of the group</sh></dl>
 
 `property State: TGridDrawState` 	 
-<dl><dd>Readonly property. Draw state.</dd></dl>
+<dl><sh>Readonly property. Draw state.</sh></dl>
 
-</dd></dl>
+</sh></dl>
 <br>
 
 `DBGridEh` allows you to customize headers groups including the following string parameters: height, font and color of the grouping records, and the thickness and color of a horizontal dividing line.
@@ -146,40 +146,40 @@ TDBGridEhDataGroupGetGroupRowParamsEvent = procedure (
 Sub-properties of property `TDBGridEh.DataGrouping`:
 
 `Active: Boolean`
-<dl><dd>Specifies that the group mode is enabled. (Group only works when connected to the Grid DataSet type TMemTableEh).</dd></dl>
+<dl><sh>Specifies that the group mode is enabled. (Group only works when connected to the Grid DataSet type TMemTableEh).</sh></dl>
 
 `Color: TColor`
-<dl><dd>The background color of the flash.</dd></dl>
+<dl><sh>The background color of the flash.</sh></dl>
 
 `Font: TFont`
-<dl><dd>Font group records.</dd></dl>
+<dl><sh>Font group records.</sh></dl>
 
 `GroupLevels: TGridDataGroupLevelsEh`
-<dl><dd>Collection group  levels. Key groups is the name of the column level that is used to group the value.</dd></dl>
+<dl><sh>Collection group  levels. Key groups is the name of the column level that is used to group the value.</sh></dl>
 
 `Footers: TGridDataGroupFootersEh`
-<dl><dd>A collection of items to display summarizing values in groups and in general on the grid.</dd></dl>
+<dl><sh>A collection of items to display summarizing values in groups and in general on the grid.</sh></dl>
 
 `FootersDefValues: TGridDataGroupFootersDefValuesEh`
-<dl><dd>The default values for the summation of records.</dd></dl>
+<dl><sh>The default values for the summation of records.</sh></dl>
 
 `GroupPanelVisible: Boolean`
-<dl><dd>Property indicates that the panel group at the top of the grid is visible. The panel displays the current grouping levels. In Run-Time and Design-Time, you can drag the panel column headers to add to the group</dd></dl>
+<dl><sh>Property indicates that the panel group at the top of the grid is visible. The panel displays the current grouping levels. In Run-Time and Design-Time, you can drag the panel column headers to add to the group</sh></dl>
 
 `ParentColor: Boolean`
-<dl><dd>Use color for color Grid of group’s records.</dd></dl>
+<dl><sh>Use color for color Grid of group’s records.</sh></dl>
 
 `ParentFont: Boolean`
-<dl><dd>Use Font Grid to display the text of the group.</dd></dl>
+<dl><sh>Use Font Grid to display the text of the group.</sh></dl>
 
 `DefaultStateExpanded: Boolean`
-<dl><dd>Defines the opening or closing of the State group by default when building groups</dd></dl>
+<dl><sh>Defines the opening or closing of the State group by default when building groups</sh></dl>
 
 `GroupRowDefValues: TGridDataGroupRowDefValuesEh`
-<dl><dd>Default values for the grouping of records.</dd></dl>
+<dl><sh>Default values for the grouping of records.</sh></dl>
 
 `ShiftFolldataGroupRow: Boolean`
-<dl><dd>Property specifies whether you want to move the Group recording the lowest level to the left of the data records.</dd></dl>
+<dl><sh>Property specifies whether you want to move the Group recording the lowest level to the left of the data records.</sh></dl>
 		
 ### Displaying summing records in groups.
 In the group is allowed to display a grid summarizing the records for each group, and the overall record summarizing the bottom of the grid.
@@ -196,91 +196,91 @@ Each item in the collection `TDBGridEh.DataGrouping.Footers` in turn, is a colle
 `Grid.DataGroupoing.Footers[i]: TGridDataGroupFooterEh`
 
 `Color: TColor`
-<dl><dd>
+<dl><sh>
 Specifies the background color for the footer color.
-</dd></dl>
+</sh></dl>
 
 `Font: TFont`
-<dl><dd>
+<dl><sh>
 Controls the font in which the title cells displays its data.
-</dd></dl>
+</sh></dl>
 
 `Visible: Boolean`
-<dl><dd>
+<dl><sh>
 Specifies  whether the footer is visible in the grid.
-</dd></dl>
+</sh></dl>
 
 `ColumnItems: TGridDataGroupFooterColumnItemsEh`
-<dl><dd>
+<dl><sh>
 Colleaction of Items for every columns. Items in the collection are created automatically based on the list of columns.
-</dd></dl>
+</sh></dl>
 
 `ParentColor: Boolean`
-<dl><dd>
+<dl><sh>
 Determines where a control looks for its color information.
-</dd></dl>
+</sh></dl>
 
 `ParentFont: Boolean`
-<dl><dd>
+<dl><sh>
 Determines where a control looks for its font information.
-</dd></dl>
+</sh></dl>
 
 `ShowFunctionName: Boolean`
-<dl><dd>
+<dl><sh>
 Specifies whether to show the name of the integrable function in a cell footer.
-</dd></dl>
+</sh></dl>
 
 `RunTimeCustomizable: Boolean`
-<dl><dd>
+<dl><sh>
 Specifies that a user can change summing function at Run-Time by mouse left button click.
-</dd></dl>
+</sh></dl>
  
 Grid.DataGrouping.Footers[i].ColumnItems[j]: TGridDataGroupFooterColumnItemEh
 
 `Alignment: TAlignment`
-<dl><dd>
+<dl><sh>
 Specifies how text is aligned within the footer cell.
-</dd></dl>
+</sh></dl>
 
 `Color: TColor`
-<dl><dd>
+<dl><sh>
 Specifies the background color for the footer color.
-</dd></dl>
+</sh></dl>
 
 `DisplayFormat: string`
-<dl><dd>
+<dl><sh>
 Determines how numeric and time values are formatted for display in a footer cell.
-</dd></dl>
+</sh></dl>
 
 `Font: TFont`
-<dl><dd>
+<dl><sh>
 Controls the font in which the title cells displays its data.
-</dd></dl>
+</sh></dl>
 
 `ParentColor: Boolean`
-<dl><dd>
+<dl><sh>
 Determines where a control looks for its color information.
-</dd></dl>
+</sh></dl>
 
 `ParentFont: Boolean`
-<dl><dd>
+<dl><sh>
 Determines where a control looks for its font information.
-</dd></dl>
+</sh></dl>
 
 `ValueType: TGroupFooterValueTypeEh`
-<dl><dd>
+<dl><sh>
 Summation function.
-</dd></dl>
+</sh></dl>
 
 `ShowFunctionName: Boolean`
-<dl><dd>
+<dl><sh>
 Specifies whether to show the name of the integrable function in a cell footer.
-</dd></dl>
+</sh></dl>
 
 `RunTimeCustomizable: Boolean`
-<dl><dd>
+<dl><sh>
 Specifies that a user can change summing function at Run-Time by mouse left button click.
-</dd></dl>
+</sh></dl>
 
 ### The use of non-standard algorithms to calculate the aggregated values.
 In the group the data grid allows to calculate the value of the elements in the footer of the event. This allows for aggregation functions of any complexity. For each entry `DataSet` called `OnDataGroupFooterAggregateValue` event in which to calculate the current value of the aggregate value of the event is given for each DataSet entry. For example, the function sum must be added the current field value to the counter sum
@@ -323,7 +323,7 @@ Events `OnDataGroupFooterAggregateValue`, `OnDataGroupFooterFinalizeValue` `OnDa
 `OnDataGroupFooterAggregateValue` event
 The event is alled for each record dataset. In the event it is necessary to perform the next step of the aggregation functions.   
 
-<dl><dd>
+<dl><sh>
 
 `Grid: TCustomDBGridEh`
 Grid for which to calculate the aggregated value.
@@ -345,12 +345,12 @@ Tree item grouping.
 
 `var Processed: Boolean`
 Set Processed to True, if you have completed step sum in the event. Otherwise, the step of summing function is handled by default.
-</dd></dl>
+</sh></dl>
 
 `OnDataGroupFooterFinalizeValue` event
 Called after all calls OnDataGroup FooterAggregateValue. In the event it is necessary to perform the final calculation of aggregate functions.
 
-<dl><dd>
+<dl><sh>
 
 `Grid: TCustomDBGridEh`
 
@@ -363,11 +363,11 @@ Called after all calls OnDataGroup FooterAggregateValue. In the event it is nece
 `var AValue: Variant`
 
 `var Processed: Boolean`
-</dd></dl>
+</sh></dl>
 
 `OnDataGroupFooterToDisplayText` event
 It is called each time when footer cell is drawen. Write this event to transform the internal aggregated values to a display text value.
-<dl><dd>
+<dl><sh>
 
 `Grid: TCustomDBGridEh`
 
@@ -382,7 +382,7 @@ It is called each time when footer cell is drawen. Write this event to transform
 `var DisplayValue: String`
 
 `var Processed: Boolean`
-</dd></dl>
+</sh></dl>
 
 		 
 Using technology of summation in groups to summarize data where grouping is not necessary.

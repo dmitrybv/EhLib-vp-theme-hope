@@ -53,14 +53,14 @@ TContextPopupEvent = procedure(Sender: TObject;
 ```
 
 
-<dd>
+<sh>
 
   The event is called before context Menu is shown.
   In the event you can set up the context menu items before displaying.
   In the event you can display the context menu in your code and set the Handled parameter to True.
   For example of event handle, see the demo project
    `<EhLib archive>\Demos\PlannerEh.MainDemo\`, in FrameOne.pas module.
-</dd>
+</sh>
 <br>
 
 
@@ -73,11 +73,11 @@ TPlannerViewDrawCellEventEh = procedure (PlannerView: TCustomPlannerViewEh;
     ADrawCellArgs: TPlannerViewCellDrawArgsEh; var Processed: Boolean) of object;
 ```
 
-<dd>
+<sh>
   Event is called before rendering PlannerView cell.
   In the event you can change the cell drawing parameters by setting new values in ADrawCellArgs parameter.
   In the event you can draw the contents of the cell using the methods of PlannerView.Canvas class and set the Processed to True.
-</dd>
+</sh>
 <br>
 
 ```pascal:no-line-numbers
@@ -89,18 +89,18 @@ DataItem: TPlannerDataItemEh;
 var ReadDataItem: Boolean) of object;
 ```
 
-<dd>
+<sh>
   This event is fired when reading data of TPlannerDataItemEh from DataSoruce to PlannerView.
   In the event handler you can determine whether you want to read a particular item / event from PlannerDataSourceEh.
   Set the value to False to prevent ReadDataItem from reading.
-</dd>
+</sh>
 <br>
 
 ```pascal:no-line-numbers
 property OnSelectionChanged: TNotifyEvent; 
 ```
 
-<dd>The event is fired when the current selected TPlannerDataItemEh element is changed. In the event you can update the status of the buttons or menu items that dependent on the selected item in TPlannerDataItemEh PlannerView.</dd>
+<sh>The event is fired when the current selected TPlannerDataItemEh element is changed. In the event you can update the status of the buttons or menu items that dependent on the selected item in TPlannerDataItemEh PlannerView.</sh>
 <br>
 
 ```pascal:no-line-numbers
@@ -160,46 +160,46 @@ Fill `TPlannerDataSourceEh.ItemSourceParams.FieldsMap` collection with `TItemSou
 `TPlannerDataItemEh` class has the following properties:
 
 `property Title: String;`
-<dd>The property specifies the event title or plan element.</dd>
+<sh>The property specifies the event title or plan element.</sh>
 <br>
 
 
 `property Body: String;`
-<dd>The property specifies the detailed description of the event or plan element.</dd>
+<sh>The property specifies the detailed description of the event or plan element.</sh>
 <br>
 
 `property StartTime: TDateTime;`
-<dd>The property sets the commencement of the event.</dd>
+<sh>The property sets the commencement of the event.</sh>
 <br>
 	
 
 `property EndTime: TDateTime;`
-<dd>The property sets the expiration date of the event.</dd>
+<sh>The property sets the expiration date of the event.</sh>
 <br>
 
 
 `property AllDay: Boolean;`
-<dd>Property indicates that the event lasts all day.</dd>
+<sh>Property indicates that the event lasts all day.</sh>
 <br>
 
 
 `property ResourceID: Variant;`
-<dd>The property specifies the link to the resource is assigned to the event. List PlannerDataSourceEh.Resources resources stored in the collection. Before downloading the event are encouraged to download a list of resources from your database similar to the onload event.</dd>
+<sh>The property specifies the link to the resource is assigned to the event. List PlannerDataSourceEh.Resources resources stored in the collection. Before downloading the event are encouraged to download a list of resources from your database similar to the onload event.</sh>
 <br>
 
 
 `property ItemID: Variant;`
-<dd>Event ID. The identifier is proposed to use a unique key in the table that you keep a list of events on the side of the database.</dd>
+<sh>Event ID. The identifier is proposed to use a unique key in the table that you keep a list of events on the side of the database.</sh>
 <br>
 
 
 `property FillColor: TColor;`
-<dd>The color of the event. You can set the default color to Default.</dd>
+<sh>The color of the event. You can set the default color to Default.</sh>
 <br>
 
 
 `property ReadOnly: Boolean;`
-<dd>The property specifies that the user is not allowed to modify the contents or move the timeline event.</dd>
+<sh>The property specifies that the user is not allowed to modify the contents or move the timeline event.</sh>
 <br>
 
 

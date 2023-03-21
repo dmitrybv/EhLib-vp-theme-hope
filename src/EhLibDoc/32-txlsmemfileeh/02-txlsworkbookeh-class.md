@@ -8,27 +8,27 @@ You can use `TXlsMemFileEh.Workbook` property to access `TXlsWorkbookEh` propert
 The following `TXlsWorkbookEh` properties and methods are used to work with work pages (`Worksheet`):
 
 `function AddWorksheet(WorksheetName: string): TXlsWorksheetEh;`
-<dd>Add a new table (Worksheet) with the specified name.</dd>
+<sh>Add a new table (Worksheet) with the specified name.</sh>
 <br>
 
 `function FindWorksheet(WorksheetName: string): TXlsWorksheetEh;`
-<dd>Find a table (Worksheet) by name.</dd>
+<sh>Find a table (Worksheet) by name.</sh>
 <br>
 
 `procedure MoveWorksheet(FromIndex, ToIndex: Integer);`
-<dd>Move the Worksheet from the FromIndex position to the ToIndex position.</dd>
+<sh>Move the Worksheet from the FromIndex position to the ToIndex position.</sh>
 <br>
 
 `procedure RemoveWorksheet(WorksheetEh: TXlsWorksheetEh);`
-<dd>Delete Worksheet.</dd>
+<sh>Delete Worksheet.</sh>
 <br>
 
 `property Worksheets[WorksheetId: Variant]: TXlsWorksheetEh;`
-<dd>Get a ref to a table by name or by index. To get a value by name, pass the table name as a string to the WorksheetId parameter.</dd>
+<sh>Get a ref to a table by name or by index. To get a value by name, pass the table name as a string to the WorksheetId parameter.</sh>
 <br>
 
 `property WorksheetCount: Integer;`
-<dd>Get the number of tables in the Worksheets collection.</dd>
+<sh>Get the number of tables in the Worksheets collection.</sh>
 <br>
 
 Here is an example of using the Workbook property.

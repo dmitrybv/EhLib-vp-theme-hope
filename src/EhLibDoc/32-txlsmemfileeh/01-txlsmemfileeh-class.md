@@ -91,7 +91,7 @@ To change the format of a cell or group of cells, you must first obtain a group 
 
 The `IXlsFileCellsRangeEh` interface has the following properties for setting the format of a range of cells:
 <dl>
-<dd>
+<sh>
 
   -	Font
   
@@ -108,7 +108,7 @@ The `IXlsFileCellsRangeEh` interface has the following properties for setting th
   -	Rotate Text Rotation
   
   -	NumberFormat number format (Described in MSExcel format).
-</dd>
+</sh>
 </dl>
 <br>
 

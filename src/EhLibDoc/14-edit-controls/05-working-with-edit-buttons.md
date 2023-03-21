@@ -102,7 +102,7 @@ To adjust the display of edit button, use the following properties
 
 `EditButtonsShowOptions` property can contain the following values:
 <dl>
-<dd>
+<sh>
 	
 `sebShowOnlyForCurCellEh` 	-	Display the edit button for the current cell in the grid
 	
@@ -111,63 +111,63 @@ To adjust the display of edit button, use the following properties
 `sebShowOnlyWhenGridActiveEh` -	Display edit buttons only when the grid has input focus
 	
 `sebShowOnlyWhenDataEditingEh` -	Display edit buttons only when the DataSet is in edit mode.
-</dd>
+</sh>
 </dl>
 
 The TEditButtonEh class contains the following properties:
 
 `Action: TBasicAction`
 
-<dd>An instance of TBasicAction or the heir of him. Components such as Action created in the Design-Time using components TActionList. By assigning component Action property TEditButtonEh.Action he will be called by clicking on the edit button.</dd>
+<sh>An instance of TBasicAction or the heir of him. Components such as Action created in the Design-Time using components TActionList. By assigning component Action property TEditButtonEh.Action he will be called by clicking on the edit button.</sh>
 
 `DefaultAction: Boolean`
 
-<dd>Specifies whether to call a default action when user press the button. The default action depends on the type of field TColumnEh.Field.</dd>
+<sh>Specifies whether to call a default action when user press the button. The default action depends on the type of field TColumnEh.Field.</sh>
 
 `DropdownMenu: TPopupMenu`
 
-<dd>If you set this property PopupMenu component type drop-down menu that will be displayed when you click on the Edit button.</dd>
+<sh>If you set this property PopupMenu component type drop-down menu that will be displayed when you click on the Edit button.</sh>
 
 `DropDownFormParams: TDropDownFormCallParamsEh`
 
-<dd>It allows you to configure a button to display a drop-down form DropDownForms.</dd>
+<sh>It allows you to configure a button to display a drop-down form DropDownForms.</sh>
 
 `Enabled: Boolean`
 
-<dd>Buttons available for press</dd>
+<sh>Buttons available for press</sh>
 
 `Glyph: TBitmap`
 
-<dd>The picture to be displayed on the button</dd>
+<sh>The picture to be displayed on the button</sh>
 
 `Hint: String`
 
-<dd>Tip to be displayed when you hover over the button.</dd>
+<sh>Tip to be displayed when you hover over the button.</sh>
 
 `Images: TEditButtonImagesEh`
 
-<dd>Tip to be displayed when you hover over the button....</dd>
+<sh>Tip to be displayed when you hover over the button....</sh>
 
 `NumGlyphs: Integer`
 
-<dd>Number of pictures in the Glyph</dd>
+<sh>Number of pictures in the Glyph</sh>
 
 `ShortCut: TShortCut`
 
-<dd>The combination of buttons that will be triggered by pressing a button on the keyboard</dd>
+<sh>The combination of buttons that will be triggered by pressing a button on the keyboard</sh>
 
 `Style: TEditButtonStyleEh`
 
-<dd>
+<sh>
 
 Style drawing edging buttons
 `DropDown`, `Ellipsis`, `Glyph`, `UpDown`, `Plus`, `Minus`, `AltDropDown`, `AltUpDown`
-</dd>
+</sh>
 
 `Visible: Boolean`
 
-<dd>The button is visible</dd>
+<sh>The button is visible</sh>
 
 `Width: Integer`
 
-<dd>Width of the button</dd>
+<sh>Width of the button</sh>

@@ -11,19 +11,19 @@ Set `TitleButton` property to True value to make top-left cell working as button
 
 `DropdownMenu: TPopupMenu`
 
-<dd>Define a drop-down menu whose items will be displayed when you click on the cell IndicatorTitle </dd>
+<sh>Define a drop-down menu whose items will be displayed when you click on the cell IndicatorTitle </sh>
 
 `ShowDropDownSign: Boolean`
 
-<dd>Specifies whether to display a black triangle pointing down in the top left cell</dd>
+<sh>Specifies whether to display a black triangle pointing down in the top left cell</sh>
 
 `TitleButton: Boolean`
 
-<dd>Specifies that the upper-left cell works as a button</dd>
+<sh>Specifies that the upper-left cell works as a button</sh>
 
 `UseGlobalMenu: Boolean`
 
-<dd>
+<sh>
 
 In forming the pull-down menu to use the properties of the global object - `DBGridEhCenter.IndicatorTitleMenus`.
-</dd>
+</sh>

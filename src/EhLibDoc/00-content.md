@@ -1,6 +1,3 @@
----
-//icon: article
----
 # Content
 
 [Introduction](01-introduction.md)
@@ -15,7 +12,7 @@
 
 [TDBGridEh control](10-using-tdbgrideh-component/01-content.md)
 
-[TPrintDBGridEh component](11-printdbgrideh-component/01-printdbgrideh-component.md)
+[TPrintDBGridEh component](11-printdbgrideh-component/01-content.md)
 
 [TDBVertGridEh component](12-dbvertgrideh-component/01-dbvertgrideh-component.md)
 

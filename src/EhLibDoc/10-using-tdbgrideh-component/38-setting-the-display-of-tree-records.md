@@ -7,24 +7,24 @@ Subproperties of `TDBGridEh.TreeViewParams`:
 
 `GlyphStyle: TTreeViewGlyphStyleEh`
 
-<dd>
+<sh>
   View picture determines the state of the tree branches. Can take the following values:
   tvgsDefaultEh use a default picture in TDBGridEhStyle.GetActualGlyphStyle.
-</dd>
+</sh>
  
 <dl>
-<dd>
+<sh>
 
   `tvgsClassicEh`
 
   `tvgsThemedEh`
 
   `tvgsExplorerThemedEh`
-</dd>
+</sh>
 </dl>
 
 `ShowTreeLines: Boolean`
-<dd>Set this property to True to display the lines connecting the elements of the tree.</dd>
+<sh>Set this property to True to display the lines connecting the elements of the tree.</sh>
 
 		
 		

@@ -6,8 +6,10 @@ EhLib have a set of functions to export data from DBGridEh to `Text`, `Csv`, `HT
 Procedures and classes to import and export data are in module `DBGridEhImpExp`.
 
 ## Data Export:
+
 The global procedures `SaveDBGridEhToExportFile` and `WriteDBGridEhToExportStream` are used to export data.
 `SaveDBGridEhToExportFile` saves data to file. `WriteDBGridEhToExportStream` saves data to a stream. The `ExportClass` parameter specifies the class that will be used to export data. The `DBGridEh` parameter sets the grid to be exported.
+
 For example, you can use the following code to upload data in HTML format:
 
 ```pascal:no-line-numbers
@@ -72,76 +74,77 @@ The functions are located in the `DBGridEhImpExp` module and have the following 
 procedure SaveDBGridEhToTextFile(DBGridEh: TCustomDBGridEh; 
   const FileName: String; ExportOptions:  TDBGridEhTextExportOptions);
 ```
-<dd>Saving grid data to a file as text.</dd>
+<sh>Saving grid data to a file as text.</sh>
 
 ```pascal:no-line-numbers
 procedure WriteDBGridEhToTextStream(DBGridEh: TCustomDBGridEh; 
   Stream: TStream; ExportOptions: TDBGridEhTextExportOptions);
 ```
-<dd>Exporting grid data to a stream in text format.</dd>
+<sh>Exporting grid data to a stream in text format.</sh>
 
 ```pascal:no-line-numbers
 function WriteDBGridEhToString(DBGridEh: TCustomDBGridEh;  
   ExportOptions: TDBGridEhStringExportOptions): String;
 ```
-<dd>Exporting grid data to a string.</dd>
+<sh>Exporting grid data to a string.</sh>
 
 
 `TDBGridEhStringExportOptions` class contains the following properties:
 
-<dd>
+<sh>
 
 `property ExportSelecting: Boolean;`
-<dl>
-  <dd>Specifies to unload only the selected grid area. If property = False, then the entire grid will be unloaded regardless of the presence of the selected MultiSelect area.</dd>
-</dl><br/>
+<sh>Specifies to unload only the selected grid area. If property = False, then the entire grid will be unloaded regardless of the presence of the selected MultiSelect area.</sh>
 
 `property CellDelimiter: String;`
-<dd>A string separator of cells. Default #9 (Tab code).</dd>
-<br/>
+  <sh>A string separator of cells. Default #9 (Tab code).</sh>
 
 `property LineDelimiter: String;`
-<dd>Line separator string. The default is sLineBreak.</dd>
+<sh>Line separator string. The default is sLineBreak.</sh>
 
 `property TrailingLineDelimiter: Boolean;`
-<dd>The property specifies whether to unload the line separator after the last unloaded line.</dd>
+<sh>The property specifies whether to unload the line separator after the last unloaded line.</sh>
 
 `property QuoteChar: Char;`
-Use QuoteChar to get or set the quote character that is used to enclose individual cell values if the value contains a substring that matches the value of the CellDelimiter, LineDelimiter, or QuoteChar property.
+<sh>Use QuoteChar to get or set the quote character that is used to enclose individual cell values if the value contains a substring that matches the value of the CellDelimiter, LineDelimiter, or QuoteChar property.</sh>
 
 `property IsExportTitle: Boolean;`
-<dd>The property specifies whether to write the column headings in the first row of the export.</dd>
+<sh>The property specifies whether to write the column headings in the first row of the export.</sh>
 
 `property IsExportFooter: Boolean;`
-<dd>The property specifies whether to unload grid footers after unloading the split data.</dd>
+<sh>The property specifies whether to unload grid footers after unloading the split data.</sh>
 
 `property UseEditFormat: Boolean;`
-<dd>The property specifies that when receiving cell data as a string for numeric data and DateTime data, the string format used when editing the cell must be used. If property = False, then Column.DisplayFormat property will be used for formatting.</dd>
+<sh>The property specifies that when receiving cell data as a string for numeric data and DateTime data, the string format used when editing the cell must be used. If property = False, then Column.DisplayFormat property will be used for formatting.</sh>
 
 `property FormatSettings: TFormatSettings;`
-The property specifies the format for numeric and DateTime values to be used when converting numbers and dates to text.
+<sh>The property specifies the format for numeric and DateTime values to be used when converting numbers and dates to text.</sh>
 
 `property UseFormatSettings: Boolean;`
-<dd>Set the property to True to indicate that the FormatSettings property should be used when converting numeric data.</dd>
+<sh>Set the property to True to indicate that the FormatSettings property should be used when converting numeric data.</sh>
 
 `property ExportColumns: TColumnsEhList;`
-<dd>List of columns to be exported. If the property is not filled, then all visible rows of the grid will be exported.</dd>
+<sh>List of columns to be exported. If the property is not filled, then all visible rows of the grid will be exported.</sh>
 
-</dd><br/>
+</sh><br/>
 
 The `TDBGridEhTextExportOptions` class inherits from the `TDBGridEhStringExportOptions` class and has the following additional properties.
 
-<dd>
+<sh>
 
   `property Encoding: TEncoding;`
-  <dd>The property specifies the character encoding that will be used when writing the exported data string to a stream or file.</dd><br/>
+  <sh>The property specifies the character encoding that will be used when writing the exported data string to a stream or file.</sh>
   
   `property WriteBOM: Boolean;`
-  <dd>Set the property to True to indicate to the algorithm that when writing data to a stream, a Byte Order Mark must be written to the beginning of the stream, which contains the encoding code in which the text data was written. For a description of the Byte Order Mark, see here: 
-  
+  <sh>
+   
+   Set the property to True to indicate to the algorithm that when writing data to a stream, a Byte Order Mark must be written to the beginning of the stream, which contains the encoding code in which the text data was written. For a description of the Byte Order Mark, see here:
+      
   https://en.wikipedia.org/wiki/Byte_order_mark
-  </dd>
-</dd>
+      
+  </sh>
+
+</sh>
 <br/>
 
 
@@ -214,71 +217,72 @@ procedure ExportDBGridEhToXlsx(
 The new version of the procedure uses the `ExportOptions` parameter of type `TDBGridEhXlsMemFileExportOptions` instead of the Options parameter.
 The `TDBGridEhXlsMemFileExportOptions` class contains the following properties:
 
-<dd>
+<sh>
   
-  `property IsExportSelecting: Boolean`
-  Export only selected area of the grid. If property = False the entire grid will be exported.
+`property IsExportSelecting: Boolean`
+<sh>Export only selected area of the grid. If property = False the entire grid will be exported.</sh>
   
-  `property ExportColumns: TColumnsEhList`
-  List of columns to export. If you need to export all visible columns of the grid, leave the ExportColumns list empty.
+`property ExportColumns: TColumnsEhList`
+<sh>List of columns to export. If you need to export all visible columns of the grid, leave the ExportColumns list empty.</sh>
   
-  `property IsExportTitle: Boolean`
-  Whether to export the column headings.
+`property IsExportTitle: Boolean`
+<sh>Whether to export the column headings.</sh>
   
-  `property IsExportFooter: Boolean`
-  Whether the grid footer needs to be exported.
+`property IsExportFooter: Boolean`
+<sh>Whether the grid footer needs to be exported.</sh>
   
-  `property IsExportFontFormat: Boolean`
-  Whether it is necessary to export the font format: Name, style, color.
+`property IsExportFontFormat: Boolean`
+<sh>Whether it is necessary to export the font format: Name, style, color.</sh>
   
-  `property IsExportFillColor: Boolean`
-  Whether to export cell colors.
+`property IsExportFillColor: Boolean`
+<sh>Whether to export cell colors.</sh>
   
-  `property IsExportCellFormat: Boolean`
-  Whether to export the format of the cells. Vertical and horizontal alignment.
+`property IsExportCellFormat: Boolean`
+<sh>Whether to export the format of the cells. Vertical and horizontal alignment.</sh>
   
-  `property IsExportDisplayFormat: Boolean`
-  Whether to export the format of numbers and dates specified in the Column.DisplayFormat or NumberField/DateField.DisplayFormat property
+`property IsExportDisplayFormat: Boolean`
+<sh>Whether to export the format of numbers and dates specified in the Column.DisplayFormat or NumberField/DateField.DisplayFormat property</sh>
   
-  `property IsCreateAutoFilter: Boolean`
-  Whether to create an autofilter region.
+`property IsCreateAutoFilter: Boolean`
+<sh>Whether to create an autofilter region.</sh>
   
-  `property IsExportFreezeZones: Boolean`
-  Whether to export fixed, non-scrollable zones. Zones are created based on the Grid Header and Frozen columns.
+`property IsExportFreezeZones: Boolean`
+<sh>Whether to export fixed, non-scrollable zones. Zones are created based on the Grid Header and Frozen columns.</sh>
   
-  `property IsFooterSumsAsFormula: Boolean`
-  Whether it is necessary to convert the calculated Sum and Count values into Excel formulas before exporting the footer.
+`property IsFooterSumsAsFormula: Boolean`
+<sh>Whether it is necessary to convert the calculated Sum and Count values into Excel formulas before exporting the footer.</sh>
   
-  `property IsExportDataGrouping: Boolean`
-  Whether to export the grouping structure of the grid records.
+`property IsExportDataGrouping: Boolean`
+<sh>Whether to export the grouping structure of the grid records.</sh>
   
-  `property GridHeaderText: String`
-  General grid header.
+`property GridHeaderText: String`
+<sh>General grid header.</sh>
   
-  `property GridHeaderFont: TFont;`
-  Grid common header font.
+`property GridHeaderFont: TFont;`
+<sh>Grid common header font.</sh>
   
-  `property GridHeaderFontStored: Boolean;`
-  Grid common header font is assigned. If the property value is False, then the default font used by Excel will be used. When the GridHeaderFont property is changed, the value of this property is automatically changed to True.
+`property GridHeaderFontStored: Boolean;`
+<sh>Grid common header font is assigned. If the property value is False, then the default font used by Excel will be used. When the GridHeaderFont property is changed, the value of this property is automatically changed to True.</sh>
   
-  `property GridFooterText: String;`
-  General grid footer. The text data is added to the Worksheet in the grid data.
+`property GridFooterText: String;`
+<sh>General grid footer. The text data is added to the Worksheet in the grid data.</sh>
   
-  `property GridFooterFont: TFont;`
-  The grid's common footer font.
+`property GridFooterFont: TFont;`
+<sh>The grid's common footer font.</sh>
   
-  `property GridFooterFontStored: Boolean;`
-  The grid's common footer font is assigned.
+`property GridFooterFontStored: Boolean;`
+<sh>The grid's common footer font is assigned.</sh>
   
-  `property SheetName: String;`
-  Worksheet page name.
-</dd><br/>
+`property SheetName: String;`
+<sh>Worksheet page name.</sh>
+
+</sh><br/>
 
 Parameter `ExporterClass: TDBGridEhToXlsMemFileExporterClass`
-<dd>
+<sh>
 
 This parameter must point to a class inherited from `TDBGridEhToXlsMemFileExporter`. Calling the  `ExportDBGridEhToXlsx` procedure with the given parameters should be used when it is necessary to change the export algorithm or formatting details when exporting data from DBGridEh to an Xlsx file. Before calling the procedure, write an inheritor from the `TDBGridEhToXlsMemFileExporter` class and override the necessary virtual functions responsible for the necessary export details. When calling the `ExportDBGridEhToXlsx` procedure, pass a pointer to the inherited class. The procedure will create an instance of the specified class and will use it to export data.
-</dd>
+</sh>
 
 Here is an example of calling the `ExportDBGridEhToXlsx` procedure without the ExporterClass parameter:
 
@@ -386,6 +390,12 @@ The `TDBGridEhToXlsMemFileExporter.Worksheet` property is not assigned to the co
 
 ## Data Import:
 To import data, you can use the following classes:
-`TDBGridEhImportAsText` – to import a text file or stream in which the values of the fields are separated by VK_TAB (#09).
-`TDBGridEhImportAsUnicodeText` - to import a text file or stream in Unicode format.
-`TDBGridEhImportAsVCLDBIF` – This data format used for the data transfer of one grid to another via the clipboard data.
+
+`TDBGridEhImportAsText`
+<sh>to import a text file or stream in which the values of the fields are separated by VK_TAB (#09).</sh>
+
+`TDBGridEhImportAsUnicodeText`
+<sh>to import a text file or stream in Unicode format.</sh>
+
+`TDBGridEhImportAsVCLDBIF`
+<sh>This data format used for the data transfer of one grid to another via the clipboard data.</sh>

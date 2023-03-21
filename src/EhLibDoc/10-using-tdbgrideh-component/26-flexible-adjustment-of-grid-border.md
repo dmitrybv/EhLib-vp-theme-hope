@@ -9,28 +9,28 @@ DBGridEh allows you to customize the color and display side border (Border) of t
 Sub-properties of TDBGridEh.Border property:
 
 `Color: Boolean`
-<dl><dd>
+<dl><sh>
 Background color fringing.
-</dd></dl>
+</sh></dl>
 
 `Ctl3D: Boolean`
-<dl><dd>
+<dl><sh>
 Specifies that the line shall be drawn in 3D. Top and left border darker color. Bottom and right lighter.
-</dd></dl>
+</sh></dl>
 
 `EdgeBorders: TEdgeBorders`
-<dl><dd>
+<dl><sh>
 EdgeBorders property is set (set) that indicates which side of border drawn. A set can contain a combination of the following - ebLeft, ebTop, ebRight, ebBottom.
-</dd></dl>
+</sh></dl>
 
 `ExtendedDraw: Boolean`
-<dl><dd>
+<dl><sh>
 
 Use ExtendedDraw property to establish that border will be drawn through the inner grid instead by standard features of the functional Windows.
 Color properties and EdgeBorders are taken into account only when `ExtendedDraw = True`.
-</dd></dl>
+</sh></dl>
 
 `Style: TBorderStyle`
-<dl><dd>
+<dl><sh>
 Style edging. It can take values bsNone and bsSingle.
-</dd></dl>
+</sh></dl>

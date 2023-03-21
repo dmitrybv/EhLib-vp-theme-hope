@@ -19,20 +19,20 @@ Type used to group categories defined by the property `CategoryGroupingType`. `C
 
 <dl>
 
-<dd>
+<sh>
 
 `cgtFieldRowCategoryNameEh` - Form category basing on `TFieldRowEh.CategoryName` property value. The number of categories determined by the number of unique values in the list of `TDBVertGridEh.Rows[i].CategoryName` values. Additional properties of the categories can be set using the properties of the `TDBVertGridEh.RowCategories`.CategoryProps collection.
-</dd>
+</sh>
 
-<dd>
+<sh>
 
 `cgtEmptyNotEmptyValueEh` - To form category based on the presence of values in fields in `DataSet`. The grid line will fall into one of two categories. Category 1 - a field in which the values of the current record is not Null. Category 1 - a field in which the values of the current record = Null.
-</dd>
+</sh>
 
-<dd>
+<sh>
 
 `cgtFieldDataTypeEh` - To form category based on the type of fields. Fields will fall into one of the following categories: Text fields, numeric fields, Logical fields, field type DateTime fields such as BLOB, another type of field.
-</dd>
+</sh>
 
 </dl>
 

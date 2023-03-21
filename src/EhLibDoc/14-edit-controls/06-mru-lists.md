@@ -24,25 +24,25 @@ If your `DataSet` supports the ability to get a list of unique values for a fiel
 The `TMRUListEh` class contains the following properties:
 
 `property AutoAdd: Boolean`
-<dd>Automatically add new value to the list when the control lost input focus.</dd>
+<sh>Automatically add new value to the list when the control lost input focus.</sh>
 
 `property Active: Boolean`
-<dd>MRUList is active</dd>
+<sh>MRUList is active</sh>
 
 `property CaseSensitive: Boolean`
-<dd>Search and filter text in the list of sensitive of case</dd>
+<sh>Search and filter text in the list of sensitive of case</sh>
 
 `property Items: TStrings`
-<dd>List of Values </dd>
+<sh>List of Values </sh>
 
 `property Limit: Integer`
-<dd>The maximum number of rows in the list. After reaching the limit value monitoring will delete the oldest value prior to the addition of new.</dd>
+<sh>The maximum number of rows in the list. After reaching the limit value monitoring will delete the oldest value prior to the addition of new.</sh>
 
 `property Rows: Integer`
-<dd>The size of the list box. The size is given in text strings.</dd>
+<sh>The size of the list box. The size is given in text strings.</sh>
 
 `property ListSourceKind: TMRUListSourceKindEh`
-<dd>
+<sh>
 
   Defines a kind of source data for MRU DropDown list.
 
@@ -50,5 +50,5 @@ The `TMRUListEh` class contains the following properties:
 
 `lskDataSetFieldValuesEh` – source data for DropDown list will be taken from `DataSet`. For `DataSet` a `TDatasetFeaturesEh` class must be registered with implementing of `FillFieldUniqueValues` method to list of unique values for a dataset field.
   
-</dd>
+</sh>
 

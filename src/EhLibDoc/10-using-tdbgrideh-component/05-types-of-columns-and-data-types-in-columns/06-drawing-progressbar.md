@@ -26,39 +26,39 @@ Procedure DrawProgressBarEh has next parameters:
 <br>
 
 `CurrentValue: Double;`
-<dd>Current value of the DrawProgress position.</dd>
+<sh>Current value of the DrawProgress position.</sh>
 <br>
 
 `MinValue: Double;`
-<dd>Minimum value of the DrawProgress position. The value is used to calculate the current percentage.</dd>
+<sh>Minimum value of the DrawProgress position. The value is used to calculate the current percentage.</sh>
 <br>
 
 `MaxValue: Double;`
-<dd>Maxinum value of the DrawProgress position. The value is used to calculate the current percentage.</dd>
+<sh>Maxinum value of the DrawProgress position. The value is used to calculate the current percentage.</sh>
 <br>
 
 `Canvas: TCanvas;`
-<dd>The canvas that is used for rendering. Here you need to pass the canvas of the grid.</dd>
+<sh>The canvas that is used for rendering. Here you need to pass the canvas of the grid.</sh>
 <br>
 
 `const Rect: TRect;`
-<dd>The rectangle inside which the DrawProgress is drawn.</dd>
+<sh>The rectangle inside which the DrawProgress is drawn.</sh>
 <br>
 
 `Color: TColor;`
-<dd>The color of the progress bar that paints the completed part of the process.</dd>
+<sh>The color of the progress bar that paints the completed part of the process.</sh>
 <br>
 
 `FrameColor: TColor;`
-<dd>The border color of the completed part of the progress bar.</dd>
+<sh>The border color of the completed part of the progress bar.</sh>
 <br>
 
 `BackgroundColor: TColor;`
-<dd>The color of the entire background of the progress bar.</dd>
+<sh>The color of the entire background of the progress bar.</sh>
 <br>
 
 `const PBParPtr: PProgressBarParamsEh = nil`
-<dd>Pointer to advanced rendering options for the progress bar. This is not a required parameter. You can also pass nil as a parameter to indicate that advanced options are not used.</dd>
+<sh>Pointer to advanced rendering options for the progress bar. This is not a required parameter. You can also pass nil as a parameter to indicate that advanced options are not used.</sh>
 <br>
 
 Extended options are of the following type:
@@ -72,61 +72,61 @@ PProgressBarParamsEh = ^TProgressBarParamsEh;
 `TProgressBarParamsEh` has the following fields:
 
 `ShowText: Boolean;`
-<dd>Whether to show the progress percentage value.</dd>
+<sh>Whether to show the progress percentage value.</sh>
 <br>
 
 `TextType: TProgressBarTextTypeEh;`
 
 `TProgressBarTextTypeEh = (pbttAsValue, pbttAsPercent);`
-<dd> <code>pbttAsValue</code> - display the value passed in the CurrentValue parameter.</dd>
+<sh> <code>pbttAsValue</code> - display the value passed in the CurrentValue parameter.</sh>
 <br>
-<dd> <code>pbttAsPercent</code> - Display the value as a percentage calculated using the formula MaxValue - MinValue = 100%.</dd>
+<sh> <code>pbttAsPercent</code> - Display the value as a percentage calculated using the formula MaxValue - MinValue = 100%.</sh>
 <br>
 
 `TextDecimalPlaces: Byte;`
-<dd> Round the value to a decimal point.</dd> 
+<sh> Round the value to a decimal point.</sh> 
 <br>
 
 `TextAlignment : TAlignment;`
-<dd> Percent text alignment.</dd> 
+<sh> Percent text alignment.</sh> 
 <br>
 
 `FrameFigureType: TProgressBarFrameFigureTypeEh;`
 
 `TProgressBarFrameFigureTypeEh = (pbfftRectangle, pbfftRoundRect);`
-<dd> Border type.
+<sh> Border type.
  <br> <br>
  <code>pbfftRectangle</code> - Rectangle.
  <br> <br>
- <code>pbfftRoundRect</code> - Rectangle with rounded corners.</dd> 
+ <code>pbfftRoundRect</code> - Rectangle with rounded corners.</sh> 
 <br>
 
 `FrameSizeType: TProgressBarFrameSizeTypeEh;`
 
 `TProgressBarFrameSizeTypeEh = (pbfstFull, pbfstVal);`
 
-<dd>
+<sh>
 The drawing area of the border.
 
  <code>pbfstFull</code> - A border is drawn around the entire area of the progress bar.
 
  <code>pbfstVal</code> - The border is drawn around the completed area of the progress bar.
-</dd> 
+</sh> 
 
 `Indent: Byte`
-<dd>The size of the indent from the cell borders.</dd><br>
+<sh>The size of the indent from the cell borders.</sh><br>
 
 `FontName: String;`
-<dd>The name of the font to display the progress percentage.</dd><br>
+<sh>The name of the font to display the progress percentage.</sh><br>
 
 `FontColor: TColor;`
-<dd>Font color.</dd><br>
+<sh>Font color.</sh><br>
 
 `FontSize: Integer;`
-<dd>Font size.</dd><br>
+<sh>Font size.</sh><br>
 
 `FontStyle: TFontStyles;`
-<dd>Font style.</dd><br>
+<sh>Font style.</sh><br>
 
 Code example:
 

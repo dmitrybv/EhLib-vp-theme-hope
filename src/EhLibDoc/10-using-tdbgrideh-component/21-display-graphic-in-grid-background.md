@@ -9,29 +9,29 @@ To customize the display graphic background use BackgroundData properties `DBGri
 `DBGridEh.BackgroundData: TDBGridBackgroundDataEh`
 
 `Visible: Boolean`
-<dd>Specifies whether the Background Pciture is visible in the grid.</dd>
+<sh>Specifies whether the Background Pciture is visible in the grid.</sh>
 
 `Picture: TPicture`
-<dd>The Pciture to draw as a Background Data.</dd>
+<sh>The Pciture to draw as a Background Data.</sh>
 
 `Placement: TImagePlacementEh`
 
 `ImagePlacementEh = (ipTopLeftEh, ipTopCenterEh, ipTopRightEh, ipCenterLeftEh, ipCenterCenterEh, ipCenterRightEh, ipBottomLeftEh, ipBottomCenterEh, ipBottomRightEh, ipFillEh, ipFitEh, ipStretchEh, ipTileEh);`
-<dd>Specifies the position of the image and the way of filling the free space</dd>
+<sh>Specifies the position of the image and the way of filling the free space</sh>
 
 `HorzMargin: Integer`
-<dd>Horizontal Shift</dd>
+<sh>Horizontal Shift</sh>
 
 `VertMargin: Integer`
-<dd>Vertical Shift</dd>
+<sh>Vertical Shift</sh>
 
 `ExcludeTitle: Boolean`
-<dd>Delete the title of the fill graphic background.</dd>
+<sh>Delete the title of the fill graphic background.</sh>
 
 `ExcludeIndicator: Boolean`
-<dd>Delete button from the fill graphic background.</dd>
+<sh>Delete button from the fill graphic background.</sh>
 
 `ExcludeFooter: Boolean`
-<dd>Delete the footer of the fill graphic background.</dd>
+<sh>Delete the footer of the fill graphic background.</sh>
 
  

@@ -8,7 +8,7 @@
 
 [Types of columns and data types in columns](05-types-of-columns-and-data-types-in-columns/01-types-of-columns-and-data-types-in-columns.md)
 
-<dd>
+<sh>
 
 [Accessing grid columns](05-types-of-columns-and-data-types-in-columns/02-access-to-the-grid-columns.md)
 
@@ -22,7 +22,7 @@
 
 [Showing bitmaps in data cells depending on the field values](05-types-of-columns-and-data-types-in-columns/07-bitmaps-in-cells.md)
 
-</dd>
+</sh>
 
 [Enable / Disable editing data in the Grid](06-enable-disable-editing-data-in-the-grid.md)
 

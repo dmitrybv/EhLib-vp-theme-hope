@@ -7,14 +7,14 @@ There are event in the `PlannerView` to set data for hint window (Hints) that ap
 OnSpanItemHintShow: TPlannerViewSpanItemHintShowEventEh
 ```
 
-<dd>
+<sh>
 
   Write the event handler to change text, font or background color.
   The hint window is appeared when a mouse moves and hold over the event area (`TPlannerDataItemEh`).
   
   
   In the below example the `OnSpanItemHintShow` handler adds a new line with text 'NewLine' and sets the hint font in bold style.
-</dd>
+</sh>
 
 ```pascal:no-line-numbers
 procedure TfrFrameOne.PlannerDayViewEh1SpanItemHintShow(

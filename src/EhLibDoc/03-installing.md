@@ -10,43 +10,43 @@ After unpacking you will have next list of directories:
 Directories of the library archive:
 
 ##### `Installer`
-  <dd>Constains EhLibInstaller.exe</dd>
+  <sh>Constains EhLibInstaller.exe</sh>
   <br/>
 
 ###### `Common`
-  <dd>Contain source files which are common for all versions of Delphi and C++ Builder.</dd>
+  <sh>Contain source files which are common for all versions of Delphi and C++ Builder.</sh>
   <br/>
 
 ###### `RADStudio2009`
-  <dd>Contain source files which are specific for RAD Studio 2009.</dd>
+  <sh>Contain source files which are specific for RAD Studio 2009.</sh>
   <br/>
 
 ###### `RADStudioXXXX`
-  <dd>Contain source files which are specific for RAD Studio XXXX.</dd>
+  <sh>Contain source files which are specific for RAD Studio XXXX.</sh>
 
 ###### `Demos`
-  <dd>Demonstration projects</dd>
+  <sh>Demonstration projects</sh>
 
 ###### `Bin`
-  <dd>Contains the compiled executables major demonstration projects. (Contains files only in the editorial - EhLib Evaluation)</dd>
+  <sh>Contains the compiled executables major demonstration projects. (Contains files only in the editorial - EhLib Evaluation)</sh>
 
 ###### `Data`
-  <dd>Contains the database files for the demonstration projects.</dd>
+  <sh>Contains the database files for the demonstration projects.</sh>
 
 ###### `LangResources`
-  <dd>Contain resource files for various languages.</dd>
+  <sh>Contain resource files for various languages.</sh>
 
 ###### `DataDrivers`
-  <dd>Contains additional components that inherit from TDataDriverEh generators to support data access third party.</dd>
+  <sh>Contains additional components that inherit from TDataDriverEh generators to support data access third party.</sh>
 
 ###### `DataService`
-  <dd>Contain files that contain objects that allows to sort data in various types of datasets.</dd>
+  <sh>Contain files that contain objects that allows to sort data in various types of datasets.</sh>
 
 ###### `Orders`
-  <dd>Contain text files in which described how to register  various versions of EhLib.</dd>
+  <sh>Contain text files in which described how to register  various versions of EhLib.</sh>
 
 ###### `HLP`
-  <dd>Contain help Files and Documentation.</dd>
+  <sh>Contain help Files and Documentation.</sh>
 
 <dl>
 </dl>

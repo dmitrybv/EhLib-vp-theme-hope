@@ -5,7 +5,7 @@
 
 Tabular data includes:
 
-<dd>
+<sh>
 
   - Column definition (Properties Columns, DefaultColWidth)
   
@@ -22,7 +22,7 @@ Tabular data includes:
   - Print settings (Subproperties properties PrintParams)
   
   -  Setting non-scrollable areas (Properties FrozenColCount, FrozenRowCount)
-</dd>
+</sh>
 <br>
 
 You can get access tp Worksheet from the collection of Worksheets in the Workbook.
@@ -32,66 +32,66 @@ Like this:
 `TXlsWorksheetEh` class has the following properties:
 
 `property Name: String;`
-<dd>Worksheet title. In Excel, the title appears at the bottom of the bookmark list.</dd>
+<sh>Worksheet title. In Excel, the title appears at the bottom of the bookmark list.</sh>
 <br>
 
 `property TabColor: TColor;`
-<dd>Table bookmark color.</dd>
+<sh>Table bookmark color.</sh>
 <br>
 
 `property AutoFilterRange: TXlsFileWorksheetCellsRectEh;`
-<dd>Auto filter area</dd>
+<sh>Auto filter area</sh>
 <br>
 
 `property CellDataExists[Col, Row: Integer]: Boolean;`
-<dd>Determine if the TXlsFileCellEh object was created at the specified coordinates.</dd>
+<sh>Determine if the TXlsFileCellEh object was created at the specified coordinates.</sh>
 <br>
 
 `property Cells[Col, Row: Integer]: TXlsFileCellEh;`
-<dd>Access to table cells with coordinates Col, Row. Coordinates start at zero.</dd>
+<sh>Access to table cells with coordinates Col, Row. Coordinates start at zero.</sh>
 <br>
 
 `property Columns: TXlsFileColumnsEh;`
-<dd>Page column options.</dd>
+<sh>Page column options.</sh>
 <br>
 
 `property DefaultColWidth: Double;`
-<dd>The default column width.</dd>
+<sh>The default column width.</sh>
 <br>
 
 `property DefaultRowHeight: Double;`
-<dd>Default line height.</dd>
+<sh>Default line height.</sh>
 <br>
 
 `property DefaultRowHeight: Double;`
-<dd>The size of the area that contains nonblank cells</dd>
+<sh>The size of the area that contains nonblank cells</sh>
 <br>
 
 `property FrozenColCount: Integer;`
-<dd>The number of columns frozen.</dd>
+<sh>The number of columns frozen.</sh>
 <br>
 
 `property FrozenRowCount: Integer;`
-<dd>The number of frozen lines.</dd>
+<sh>The number of frozen lines.</sh>
 <br>
 
 `property OutlineRowsSummaryBelow: Boolean;`
-<dd>The group headers for the columns are below the group. The property is used when grouping strings.</dd>
+<sh>The group headers for the columns are below the group. The property is used when grouping strings.</sh>
 <br>
 
 `property OutlineColsSummaryRight: Boolean`
-<dd>The row group headers are located to the right of the group. The property is used when grouping columns.</dd>
+<sh>The row group headers are located to the right of the group. The property is used when grouping columns.</sh>
 <br>
 
 `property PrintParams: TXlsFileWorksheetPrintParamsEh;`
-<dd>Print Options: Page Orientation, Header, etc.</dd>
+<sh>Print Options: Page Orientation, Header, etc.</sh>
 <br>
 
 `property Rows: TXlsFileRowsEh;`
-<dd>Page line options.</dd>
+<sh>Page line options.</sh>
 <br>
 
 `property ZoomScale: Integer;`
-<dd>Scaling. Set as a percentage. The default is 100.</dd>
+<sh>Scaling. Set as a percentage. The default is 100.</sh>
 <br>
 

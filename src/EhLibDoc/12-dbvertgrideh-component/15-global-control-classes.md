@@ -20,32 +20,32 @@ The methods that can be overridden in `TDBAxisGridEhCenter`:
 
 `procedure EditButtonDefaultAction(…); virtual;`
 
-<dl><dd>
+<dl><sh>
 
 Occurs when `EditButton` is pressed in any editor cell component of any `TDBGridEh` or `TDBVertGridEh` class. You can override this virtual procedure to write your actions when you click on `EditButton`. To override the action clicking on the level of the individual grid use the `OnEditButtonDown` and `OnEditButtonClick` event.
-</dd></dl>
+</sh></dl>
 <br>
 
 `procedure EditButtonDefaultActionForImage(…); virtual;`
 
-<dd>
+<sh>
 
 Occurs when `EditButton` is pressed in any editor cell component of any `TDBGridEh` or `TDBVertGridEh` class for Blob field type which is the type of `BlobType=ftGraphic`.
-</dd>
+</sh>
 <br>
 
 `procedure EditButtonDefaultActionText(…); virtual;`
 
-<dd>
+<sh>
 
 Occurs when `EditButton` is pressed in any editor cell component of any class or `TDBGridEh` `TDBVertGridEh` text field.
-</dd>
+</sh>
 <br>
 
 `procedure FormSystemPopupMenuForColumn(…); virtual;`
 
-<dd>
+<sh>
 
 Intended to form the `Popup` menu that opens when user clicks on when `EditButton` any editor cell component of any `TDBGridEh` or `TDBVertGridEh` class. In the current implementation, the procedure is called only for graphic `Blob` fields.
-</dd>
+</sh>
 <br>

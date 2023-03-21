@@ -7,72 +7,72 @@ Sub-properties of property TDBGridEh.TitleParams:
 
 `Color: TColor`
 
-<dd>Specifies the background color for the title cells.</dd>
+<sh>Specifies the background color for the title cells.</sh>
 
 `Font: TFont`
 
-<dd>Controls the font in which the title cells displays its data.</dd>
+<sh>Controls the font in which the title cells displays its data.</sh>
 
 `ParentFont: Boolean`
 
-<dd>Determines where a control looks for its font information.</dd>
+<sh>Determines where a control looks for its font information.</sh>
 
 `SecondColor: TColor`
 
-<dd>Second background color that is used when cells painted in gradient mode. Use FillStyle property to define paint style.</dd>
+<sh>Second background color that is used when cells painted in gradient mode. Use FillStyle property to define paint style.</sh>
 
 `Images: TCustomImageList`
 
-<dd>List of Images when displaying images in the header. Index of drawing Image is defined in Column.Title.ImageIndex</dd>
+<sh>List of Images when displaying images in the header. Index of drawing Image is defined in Column.Title.ImageIndex</sh>
 
 `MultiTitle: Boolean`
 
-<dd>Determines that the title will be drawn in a MultiTitle mode.</dd>
+<sh>Determines that the title will be drawn in a MultiTitle mode.</sh>
 
 `RowHeight: Integer`
 
-<dd>Specifies the height of data row in text lines</dd>
+<sh>Specifies the height of data row in text lines</sh>
 
 `RowLines: Integer`
 
-<dd>
+<sh>
 Specifies the height of data row in text lines
 Full row height = height in pixels of RowLines + RowHeight.
-</dd>
+</sh>
 
 `SortMarkerStyle: TSortMarkerStyleEh`
 
-<dd>Defines the shape of the sorting markers.</dd>
+<sh>Defines the shape of the sorting markers.</sh>
 
 `VTitleMargin: Integer`
 
-<dd>Specifies the margin between text and bottom of title; and margin between text and top of title.</dd>
+<sh>Specifies the margin between text and bottom of title; and margin between text and top of title.</sh>
 
 `VertLineColor: TColor`
 
-<dd>Color vertical lines in the data area.</dd>
+<sh>Color vertical lines in the data area.</sh>
 
 `VertLines: Boolean`
 
-<dd>Presence of vertical lines in the data area.</dd>
+<sh>Presence of vertical lines in the data area.</sh>
 
 `HorzLineColor: TColor`
 
-<dd>Color of the horizontal lines in the data area.</dd>
+<sh>Color of the horizontal lines in the data area.</sh>
 
 `HorzLines: Boolean`
 
-<dd>Presence of horizontal lines in the data area.</dd>
+<sh>Presence of horizontal lines in the data area.</sh>
 
 `FillStyle: TGridCellFillStyleEh`
 
-<dd>Specifies the style of filling the title cells.</dd>
+<sh>Specifies the style of filling the title cells.</sh>
 
 `BorderInFillStyle: Boolean`
 
-<dd>
+<sh>
 Specifies that the vertical lines are drawn by the function that draw header cell rather then function that draw cell lines. In this mode vertical lines are drawn not to the end of the border crossing.
-</dd>
+</sh>
 <br>
 
 ### Complex titles. 

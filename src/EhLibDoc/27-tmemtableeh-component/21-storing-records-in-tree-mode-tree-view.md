@@ -29,81 +29,81 @@ For an example of using  `OnRecordsViewTreeNodeExpanding` event see the next dem
 The following classes and properties are used to access and control the operation of `MemTableEh` in tree mode:
 
 `TMemTableTreeListEh`
-<dd>
+<sh>
 
 The `TMemTableEh.TreeList` property is of the TMemTableTreeListEh type and is intended for setting the tree formation at design-time. This property does not contain tree nodes and is intended only for customization.
-</dd>
+</sh>
 
 `TMemRecViewEh`
-<dd>
+<sh>
 
 Tree nodes are of type `TMemRecViewEh` and are stored in class `TMemoryTreeListEh` (property `TMemTableEh.RecordsView.MemoryTreeList`) in the form of a tree structure. `TMemRecViewEh` objects are also used in the flat non-tree `TMemTableEh` mode. In the flat mode, the properties related to the tree in the object of the `TMemRecViewEh` class are not used. The main class property is a reference to the primary `Rec` records of the `TMemoryRecordEh` type and properties for controlling the branch of the `NodeIndex`, `NodeItems`, `NodesCount`, `NodeLevel`, `NodeParent`, etc. 
-</dd>
+</sh>
 
 The following properties can be used to access tree nodes:
 
 `property TMemTableEh.RecordsView.MemoryTreeList.Root: TMemRecViewEh`
-<dd>The root node of the tree. This node is not displayed in the tree. Link to the primary record Rec = nil. This node is always present in the tree even when the DataSet contains no entries.</dd>
+<sh>The root node of the tree. This node is not displayed in the tree. Link to the primary record Rec = nil. This node is always present in the tree even when the DataSet contains no entries.</sh>
 
 `property TMemTableEh.RecView: TMemRecViewEh;`
-<dd>A reference to the tree node object on which an entry is currently set in the DataSet. Available only in tree mode.</dd>
+<sh>A reference to the tree node object on which an entry is currently set in the DataSet. Available only in tree mode.</sh>
 
 `TMemoryTreeListEh`
-<dd>Directly the class in which the node tree (tree nodes) is stored. You do not need to form a tree based on the entries in the TMemTableEh.RecordsView.MemTableData.RecordsList list. TMemTableEh does this automatically when new records appear in the original RecordsList. </dd>
+<sh>Directly the class in which the node tree (tree nodes) is stored. You do not need to form a tree based on the entries in the TMemTableEh.RecordsView.MemTableData.RecordsList list. TMemTableEh does this automatically when new records appear in the original RecordsList. </sh>
 
 To access the status of the tree node of the current Dataset’s record, you can use the following TMemTableEh properties:
 
 `property RecView: TMemRecViewEh;`
-<dd>A reference to the tree node of the tree, it is available only in tree mode.</dd>
+<sh>A reference to the tree node of the tree, it is available only in tree mode.</sh>
 
 `property TreeNode: TMemRecViewEh;`
-<dd>A link to the View data record object.</dd>
+<sh>A link to the View data record object.</sh>
 
 `property TMemTableEh.TreeNodeLevel: Integer;`
-<dd>Indicates the level of the node in the tree.</dd>
+<sh>Indicates the level of the node in the tree.</sh>
 
 `property TMemTableEh.TreeNodeExpanded: Boolean`
-<dd>Specifies whether the tree node is expanded.</dd>
+<sh>Specifies whether the tree node is expanded.</sh>
 
 `property TMemTableEh.TreeNodeHasChildren: Boolean`
-<dd>Indicates whether a node has any children.</dd>
+<sh>Indicates whether a node has any children.</sh>
 
 `property TMemTableEh.TreeNodeChildCount: Integer`
-<dd>An amount of Child elements.</dd>
+<sh>An amount of Child elements.</sh>
 <br>
 
 Properties of the `TMemTableTreeListEh` class (`TMemTableEh.TreeList` property):
 
 `property Active: Boolean`
-<dd>
+<sh>
 
 Defines that `TreeView` mode is active. In `TreeView` mode you can access `TMemTableEh` properties: `TreeNodeLevel`, `TreeNodeExpanded`, `TreeNodeHasChildren`, `TreeNodeChildCount` for current record.
-</dd>
+</sh>
 
 `property KeyFieldName: String`
-<dd>Holds a name of the key field of record. Child record will refer to parental record with the key determined by the KeyFieldName field.</dd>
+<sh>Holds a name of the key field of record. Child record will refer to parental record with the key determined by the KeyFieldName field.</sh>
 
 `property RefParentFieldName: String;`
-<dd>Holds a name of the field that contain reference value to a parent record.</dd>
+<sh>Holds a name of the field that contain reference value to a parent record.</sh>
 
 `property DefaultNodeExpanded: Boolean;`
-<dd>Defines a value of Expanded property for new elements of the tree.</dd>
+<sh>Defines a value of Expanded property for new elements of the tree.</sh>
 
 `property DefaultNodeHasChildren: Boolean;`
-<dd>Defines a value of HasChildren property for a new elements of the tree.</dd>
+<sh>Defines a value of HasChildren property for a new elements of the tree.</sh>
 
 `property FullBuildCheck: Boolean`
-<dd>Defines if need check if there are Child records in array for new record. Setting this property to False can speed up building of tree, but all child records must be added after parent record.</dd>
+<sh>Defines if need check if there are Child records in array for new record. Setting this property to False can speed up building of tree, but all child records must be added after parent record.</sh>
 <br>
 
 Methods of the TMemTableTreeListEh class (`TMemTableEh.TreeList` property):
 
 `function Locate(const KeyFields: string; const KeyValues: Variant; Options: TLocateOptions): Boolean; virtual;`
 
-<dd>
+<sh>
   The method finds an entry in the source list of TMemTableEh.RecordsView.MemTableData.RecordsList and positions the current position in the tree to the node that points to the found entry. If the found node or top-level node is closed (Expanded = False), then the node is expanded so that the record becomes visible in the grid and in the list of visible expanded records.
   In this case, the record can still not be found if it is hidden through the filter DataSet.Filter or DataSet.OnFilterRecord.
-</dd>
+</sh>
 
 `procedure FullCollapse; virtual;`
 	Collapse all the branches of the tree.

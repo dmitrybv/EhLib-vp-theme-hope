@@ -71,17 +71,17 @@ Property SpecParams kept a list of parameters and values. `TXXXDataDriverEh` use
 
 ##### On interaction with InterBase server:
 
- <dd>
+ <sh>
 
   `GENERATOR` - defines a name of the InterBase generator. DataDriver uses this parameter to get current value of generator after the insertion of new record.
 
   `GENERATOR_FIELD` - defines a name of the field, which will be assigned current value of the generator after the insertion of new record.
 
   `AUTO_INCREMENT_FIELD` - defines a name of the field, which DataDriver will set AutoIncremet type. It is used on making a structure of the internal array of record.
- </dd>
+ </sh>
 
 ##### On interaction with Oracle server:
-<dd>
+<sh>
 
 `SEQUENCE` - will assign a name of the field Oracle sequences. DataDriver uses this parameter for the reception of the current value of the sequence after the insertion of new record.
 
@@ -89,19 +89,19 @@ Property SpecParams kept a list of parameters and values. `TXXXDataDriverEh` use
 
 `AUTO_INCREMENT_FIELD` - defines a name of the field, which DataDriver will set AutoIncremet type. It is used on making a structure of the internal array of record.
 
- </dd>
+ </sh>
 
 ##### On interaction with MSSQL server:
-<dd>
+<sh>
 
 `AUTO_INCREMENT_FIELD` - defines a name of the field, which DataDriver will set AutoIncremet type. It is used on making a structure of the internal array of record.
-</dd>
+</sh>
 
 ##### On interaction with Informix server:
-<dd>
+<sh>
 
 `AUTO_INCREMENT_FIELD` - defines a name of the field, which DataDriver will set AutoIncremet type. It is used on making a structure of the internal array of record.
-</dd>
+</sh>
 
 
 #### Example of the list of parameters for InterBase server:

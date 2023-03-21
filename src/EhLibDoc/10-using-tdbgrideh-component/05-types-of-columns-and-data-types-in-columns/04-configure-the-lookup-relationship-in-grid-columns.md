@@ -32,23 +32,23 @@ The `TColumn.LookupParams` property has the following subproperties:
 <br>
 
 `property KeyFieldNames: String`
-<dd>Defines a field (or fields) in Grid.DataSource.DataSet that specifies the value to search LookupDataSet. Several fields are separated by ';'.</dd>
+<sh>Defines a field (or fields) in Grid.DataSource.DataSet that specifies the value to search LookupDataSet. Several fields are separated by ';'.</sh>
 <br>
 
 `property LookupCache: Boolean`
-<dd>Specifies whether to copy the key values in the internal buffer to speed up the operation of drawing a grid of cells.</dd>
+<sh>Specifies whether to copy the key values in the internal buffer to speed up the operation of drawing a grid of cells.</sh>
 <br>
 
 `property LookupDataSet: TDataSet`
-<dd>Specifies the dataset record values to be displayed in the lookup control instead of the field KeyField</dd>
+<sh>Specifies the dataset record values to be displayed in the lookup control instead of the field KeyField</sh>
 <br>
 
 `property LookupDisplayFieldName: String`
-<dd>Specify the field whose value will be displayed on the screen.</dd>
+<sh>Specify the field whose value will be displayed on the screen.</sh>
 <br>
 
 `property LookupKeyFieldNames: String`
-<dd>Defines a field (or fields) in LookupDataSet value will be used to search records for the value of the field specified by KeyFieldNames property.</dd>
+<sh>Defines a field (or fields) in LookupDataSet value will be used to search records for the value of the field specified by KeyFieldNames property.</sh>
 <br>
 
 With a large number of customized lookup columns in the grid, drawing data may be slow because Search lookup values occurs in each cell drawing. But drawing can be accelerated, if you use TMemTableEh as a DataSet. MemTableEh provides the ability to create in DBGridEh associated buffer values found and dynamically update it as a data changes in MemTableEh.

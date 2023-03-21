@@ -8,27 +8,27 @@ To adjust the location of `ControlLabel` use subproperties of `ControlLabelLocat
 
 `property Position: TLabelPositionEh`
 
-<dd>
+<sh>
   position relative to the master control.
   
   `TLabelPositionEh = (lpAboveLeftEh, lpAboveCenterEh, lpAboveRightEh, lpBelowLeftEh, lpBelowCenterEh, lpBelowRightEh, lpLeftTopEh, lpLeftTextBaselineEh, lpLeftCenterEh, lpLeftBottomEh, lpRightTopEh, lpRightTextBaselineEh, lpRightCenterEh, lpRightBottomEh);`
-</dd>
+</sh>
 
 property Spacing: Integer
-<dd>offset from the master control for the first axes.</dd>
+<sh>offset from the master control for the first axes.</sh>
 
 property Offset: Integer
-<dd>offset relative to the second coordinate axis of the master control.</dd>
+<sh>offset relative to the second coordinate axis of the master control.</sh>
 
 property LabelSpacingBound: TSpacingBoundEh
-<dd>Label Sets the border controls with respect to which the measured distance specified property Spacing. 
+<sh>Label Sets the border controls with respect to which the measured distance specified property Spacing. 
 
 `TSpacingBoundEh = (sbNearBoundEh, sbFarBoundEh);`
 
 `sbNearBoundEh` – Spacing the distance is relative to the brink of near-Label control.
 
 `sbFarBoundEh` – Spacing The distance is relative to the far verge Label control.
-</dd>
+</sh>
 <br>
 
 Below are the typical set of values of ControlLabelLocation subproperties:

@@ -16,7 +16,7 @@ The `TDBGridEh` inheritance tree looks like this:
 
 `TDBGridEh` supports all the features of the `TDBGrid` component and also includes many additional features.
 
-Some features of `TDBGridEh` only work when the grid is connected to a DataSet of type `TMemTableEh`. `TMemTableEh` is a `DataSet` that contains all the records in the computer's memory and is not connected directly to the database. TMemTableEh can be connected to other DataSets that can connect to the database. When working in conjunction with `TDBGridEh`-`TMemTableEh`-`TDataSetDataDriverEh`-`<Your Dataset>`, you will be able to work in the database and use all the features of `TDBGridEh` that it has when working with `TMemTableEh`.
+Some features of `TDBGridEh` only work when the grid is connected to a DataSet of type `TMemTableEh`. `TMemTableEh` is a `DataSet` that contains all the records in the computer's memory and is not connected directly to the database. TMemTableEh can be connected to other DataSets that can connect to the database. When working in conjunction with `TDBGridEh`-`TMemTableEh`-`TDataSetDriverEh`-`<Your Dataset>`, you will be able to work in the database and use all the features of `TDBGridEh` that it has when working with `TMemTableEh`.
 
 When `TDBGridEh` is connected to `TMemTableEh`, then `TDBGridEh` has the following additional features such as:
 

@@ -33,10 +33,10 @@ This method is Used in combinations with `GetBookamrk`. I do not recommend to us
 
 `function BookmarkToRec(Bookmark: TUniBookmarkEh): TMemoryRecordEh;`
 
-<dd>Convert Bookmark object into a TMemoryRecordEh object.</dd>
+<sh>Convert Bookmark object into a TMemoryRecordEh object.</sh>
 
 `function RecToBookmark(Rec: TMemoryRecordEh): TUniBookmarkEh;`
 
-<dd>Convert a MemoryRecord object into Bookmark object.</dd>
+<sh>Convert a MemoryRecord object into Bookmark object.</sh>
 
 Type of `TUniBookmarkEh` class depends on the version of Delphi and can be `TBookmark`, `array of Byte` or `TBookmarkStr` type.

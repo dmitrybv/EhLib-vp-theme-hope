@@ -5,57 +5,57 @@
 
 The property is of type `TPrintDBGridEhOptions` and can contain the following values:
 
-<dl><dd>
+<dl><sh>
 
 `pghFitGridToPageWidth`		
-<dl><dd>
+<dl><sh>
 Reduce the print scale so that the width of the grid was reduced in width of the page.
-</dd></dl>
+</sh></dl>
 
 `pghColored`				
-<dl><dd>
+<dl><sh>
 Keep color printing. If the value is not contained in the property, the grid will be printed in black and white.
-</dd></dl>
+</sh></dl>
 
 `pghRowAutoStretch`			
-<dl><dd>
+<dl><sh>
 Stretch row height to accommodate all the text in the cell text wraps to a new line.
-</dd></dl>
+</sh></dl>
 
 `pghFitingByColWidths`		
-<dl><dd>
+<dl><sh>
 If the property is set pghFitGridToPageWidth, instead of the total scaling when printing decreases the width of columns.
-</dd></dl>
+</sh></dl>
 
 `pghOptimalColWidths`		
-<dl><dd>
+<dl><sh>
 Fit the column width to fit the contents of each cell within the same line of text.
-</dd></dl>
-</dd></dl>
+</sh></dl>
+</sh></dl>
 <br>
 
 `propert TPrintDBGridEh.PrintFontName`
-<dl><dd>
+<dl><sh>
 If you set this property, it will be used for printing the specified font property, instead of the font specified in DBGridEh.
-</dd></dl>
+</sh></dl>
 
 `propert TPrintDBGridEh.Title`
-<dl><dd>
+<dl><sh>
 Title Grid. Title is printed on each page of the total cap for all the columns of the grid.
-</dd></dl>
+</sh></dl>
 
 `propert TPrintDBGridEh.OnBeforePrint`
-<dl><dd>
+<dl><sh>
 Event is called after printing a grid. In the event you can set a property of certain grid to print it more "correct".
-</dd></dl>
+</sh></dl>
 
 `propert TPrintDBGridEh.OnAfterPrint`
-<dl><dd>
+<dl><sh>
 Event is called after printing a grid. In the event you can return a property of the grid established in the event OnBeforePrint.
-</dd></dl>
+</sh></dl>
 
 `propert TPrintDBGridEh.OnPrinterSetupDialog`
-<dl><dd>
+<dl><sh>
 
 The event is called when the request for the opening of the press DIAL. If the event is not set, it uses the method `TPrintDBGridEh.PrinterSetupDialogPreview`.
-</dd></dl>
+</sh></dl>

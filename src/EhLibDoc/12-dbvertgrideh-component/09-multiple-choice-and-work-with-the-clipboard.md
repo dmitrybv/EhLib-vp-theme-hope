@@ -7,13 +7,13 @@ To enable multiple selection, set the following properties:
 
 `EditActions` 
 
-<dd>defines the actions a user can perform with a selected area (Copy, Cut, Delete, Paste, SelectAll).</dd>
+<sh>defines the actions a user can perform with a selected area (Copy, Cut, Delete, Paste, SelectAll).</sh>
 
 `AllowedSelections`
-<dd>determines the types of permitted allocation that can be performed in a grid user (vgstRowsEh, vgstRectangleEh, vgstAllEh).</dd>
+<sh>determines the types of permitted allocation that can be performed in a grid user (vgstRowsEh, vgstRectangleEh, vgstAllEh).</sh>
 
 `Selection`
-<dd>It contains properties containing information about the selected area. </dd>
+<sh>It contains properties containing information about the selected area. </sh>
 <br>
 
 The property is of type `TVertDBGridEh.Selection` 
@@ -22,77 +22,77 @@ The property is of type `TVertDBGridEh.Selection`
 
 `property AnchorRowIndex: Integer`
 
-<dd>Fixed line number in the allocation data of the rectangular area.</dd>
+<sh>Fixed line number in the allocation data of the rectangular area.</sh>
 
 `property Rows: TFieldRowSelectionListEh`
-<dd>List of lines in the allocation of full rows records.</dd>
+<sh>List of lines in the allocation of full rows records.</sh>
 
 `property SelectionType: TDBVertGridSelectionTypeEh`
-<dd>Type selection </dd>
+<sh>Type selection </sh>
 
 `property ShipRowIndex: Integer`
-<dd>Number "floating" line in the allocation of the rectangular area data.</dd>
+<sh>Number "floating" line in the allocation of the rectangular area data.</sh>
 
 `function IsCellSelected(ACol, ARow: Integer): Boolean;`
-<dd>Returns True if the cell gets in the selected area.</dd>
+<sh>Returns True if the cell gets in the selected area.</sh>
 
 `procedure Clear;`
-<dd>Clear selection. SelectionType = vgstNonEh.</dd>
+<sh>Clear selection. SelectionType = vgstNonEh.</sh>
 
 `procedure SelectAll;`
-<dd>Select the entire grid. SelectionType = vgstAllEh.</dd>
+<sh>Select the entire grid. SelectionType = vgstAllEh.</sh>
 
 `procedure SelectAllDataCells;`
-<dd>Select a rectangular area, so that it will get all the data cells.</dd>
+<sh>Select a rectangular area, so that it will get all the data cells.</sh>
 
 Use `TVertDBGridEh.Selection.SelectionType` property to determine the current view selection.
 
 `Selection.SelectionType` has `TDBVertGridSelectionTypeEh` type and can contain the following values 
 
-<dl><dd>
+<dl><sh>
     
   `vgstRowsEh`
       <dl>
-          <dd>Allocate a full-line recording. To access the recording, use a dedicated property Selection.Rows.</dd>
+          <sh>Allocate a full-line recording. To access the recording, use a dedicated property Selection.Rows.</sh>
       </dl>
     
   `vgstRectangleEh`  	
 <dl>
-    <dd>Select a square region of the data. For access to the borders of the area and use the properties of Selection.AnchorRowIndex Selection.ShipRowIndex.</dd>
+    <sh>Select a square region of the data. For access to the borders of the area and use the properties of Selection.AnchorRowIndex Selection.ShipRowIndex.</sh>
 </dl>
     
   `vgstAllEh`  		
   <dl>
-      <dd>Select the entire grid.</dd>
+      <sh>Select the entire grid.</sh>
   </dl>
     
   `vgstNonEh`  		
   <dl>
-      <dd>Multiple selection is absent.</dd>
+      <sh>Multiple selection is absent.</sh>
   </dl>
     
-</dd>
+</sh>
 </dl>
 
 The TVertDBGridEh.Selection.Rows property is of type TFieldRowSelectionListEh and contains the following properties and methods:
 
 `property Count: Integer `
-<dd>It contains the number of selected lines.</dd>
+<sh>It contains the number of selected lines.</sh>
 
 `property Items[Index: Integer]: TFieldRowEh`
-<dd>Pointers on selected lines</dd>
+<sh>Pointers on selected lines</sh>
 
 `procedure AddSelectedRow(ARow: TFieldRowEh);`
-<dd>Adds a new line type TFieldRowEh the list of selected lines.</dd>
+<sh>Adds a new line type TFieldRowEh the list of selected lines.</sh>
 
 `procedure Clear;`
-<dd>Clears the list of selected lines</dd>
+<sh>Clears the list of selected lines</sh>
 
 `procedure RemoveSelectedRow(ARow: TFieldRowEh);`
-<dd>Deletes the line type from the list TFieldRowEh selected lines.</dd>
+<sh>Deletes the line type from the list TFieldRowEh selected lines.</sh>
 
 `procedure SelectAll;`
-<dd>Selects all lines in the TVertDBGridEh.</dd>
+<sh>Selects all lines in the TVertDBGridEh.</sh>
 
 When the user selects a rectangular area of data in the data grid on the allocation are stored in the properties and `Selection.AnchorRowIndex` `Selection.ShipRowIndex`. When a rectangular selection one cell always remains fixed and specifies anchor selection AnchorRowIndex. The second cell specifies `ShipRowIndex` second selection border. If the user presses and drags the mouse up or down, the value changes in `ShipRowIndex` property.
 

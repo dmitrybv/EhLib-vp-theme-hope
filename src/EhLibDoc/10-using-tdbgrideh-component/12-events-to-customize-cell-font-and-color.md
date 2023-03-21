@@ -3,19 +3,19 @@
 There are several events that allow you to customize cell’s font attributes and color before the cell data will be drawn. In the time of calling these events the `DataSet` is positioned on the record that need to draw, so in the events you can access field values using such methods as `TDataSet.FieldByName(..).Value`. Do not change grid properties or columns properties in these events. It can bring to recirculation of the program.
 
 `TDBGridEh.OnDrawColumnCell`
-<dd>Write OnDrawColumnCell event to overload the standard method of the drawing cell. This event is called after standard drawing, so the information will be drawn above standard-drawn contents of cell. You may print the additional data, using methods of TDBGridEh(Sender).Canvas property.</dd>
+<sh>Write OnDrawColumnCell event to overload the standard method of the drawing cell. This event is called after standard drawing, so the information will be drawn above standard-drawn contents of cell. You may print the additional data, using methods of TDBGridEh(Sender).Canvas property.</sh>
 <br>
 
 `TDBGridEh.OnDrawDataCell`
-<dd>Do not write an OnDrawDataCell event handler. OnDrawDataCell is obsolete and included for backward compatibility.</dd>
+<sh>Do not write an OnDrawDataCell event handler. OnDrawDataCell is obsolete and included for backward compatibility.</sh>
 <br>
 
 `TColumnEh.OnAdvDrawDataCell` or `TDBGridEh.OnAdvDrawDataCell`
-<dd>
+<sh>
 
 Write this event to draw data in the grid cell. In code of the event we set Processed parameter in True value to define that the process of drawing was performed in event. Otherwise grid will call method for default drawing of cell data. You may, if necessary, change such parameters as ARect or Params. After changing the parameters call `Grid.DefaultDrawColumnDataCell` method and set Processed to True value. You can also leave Processed parameter in False state and don’t call `Grid.DefaultDrawColumnDataCell`. In that case, grid will call default drawing procedure using changed parameters. Use Grid.Canvas property to draw data in the cell by yourself.
 
-</dd>
+</sh>
 <br>
 
 `TDBGridEh.OnGetCellParams` and `TColumnEh.OnGetCellParams` event
@@ -23,23 +23,23 @@ Write this event to draw data in the grid cell. In code of the event we set Proc
 Parameters:
 
 `Sender: TObject`
-<dd>Grid, that call the Event</dd>
+<sh>Grid, that call the Event</sh>
 <br>
 
 `Column: TColumnEh`
-<dd>The column for which the event is called</dd>
+<sh>The column for which the event is called</sh>
 <br>
 
 `AFont : TFont`
-<dd>Font that will be used to paint a cell. You can change the font properties to specify properties of the new font rendering</dd>
+<sh>Font that will be used to paint a cell. You can change the font properties to specify properties of the new font rendering</sh>
 <br>
 
 `var Background: TColor`
-<dd>The background color that will be used to paint a cell. You can change this parameter to specify a new color</dd>
+<sh>The background color that will be used to paint a cell. You can change this parameter to specify a new color</sh>
 <br>
 
 `State: TGridDrawState`
-<dd>The status of the cell</dd>
+<sh>The status of the cell</sh>
 <br>
 
 Write `OnGetCellParams` event to set such parameters as `Font`, cell color or other parameters of cell before cell will be drawn. If it is needed to change parameters only in a specified column then use  column event - `TColumnEh.OnGetCellParams`. In this event you may change `Font`, `Color`, `Alignment`, `ImageIndex`, `Text`, checkbox's state and also such properties of a Params parameter as:
@@ -61,7 +61,7 @@ Use this event to replace the cell parameters for particular column before rende
 This event is fired, not only before rendering a grid. In some cases, the event is called to request additional cell parameters. For example, before opening `InplaceEditor` grids causing the event and check `Params.TextEditing` option to allow you to open `InplaceEditor` for the current cell.
 
 The `TColumnEh.OnGetCellParams` event has the following parameters :
-<dd>
+<sh>
 
 `Sender: TObject`
 Grid, which causes Event
@@ -74,7 +74,7 @@ Additional parameters rendering. You can change the properties of this parameter
 
 <dl>
 
-<dd>
+<sh>
 
 `Alignment: TAlignment`
 Text alignment.
@@ -126,8 +126,8 @@ The text in the cell is a link reference.
 
 `ImageIsLink: Boolean`	
 Picture from Column.ImageList a link reference.
-</dd>
+</sh>
 
 </dl>
 
-</dd>
+</sh>

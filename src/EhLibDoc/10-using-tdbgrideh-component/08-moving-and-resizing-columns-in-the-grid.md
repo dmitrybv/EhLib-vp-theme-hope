@@ -18,17 +18,17 @@ procedure OptimizeColsWidth(
   const CheckRowCount : Integer = -1; 
   const MaxWaitingTime: Integer = 0);
 ```
-<dd>
+<sh>
 
 Optimizes the column width so that the entire text of the column could be seen inside the cell. `ColumnsList` parameter specifies the list of columns for which it is necessary to perform optimization. `CheckRowCount` parameter specifies the number of records that need to get around to perform optimization. This parameter is set to limit the time of the method. `MaxWaitingTime` parameter specifies the maximum period of the method. Inside a method grid runs through all the records `DataSet`. If the option is `MaxWaitingTime` method adjourned once it reaches the specified value.
 
-</dd>
+</sh>
 
 ```pascal:no-line-numbers
 procedure OptimizeAllColsWidth(
   const CheckRowCount : Integer = -1; 
   const MaxWaitingTime: Integer = 0);
 ```
-<dd>
+<sh>
 The method works similarly to the previous method, but perform optimization for all the columns in the grid.
-</dd>
+</sh>

@@ -9,130 +9,130 @@ Set `TColumnFooterEh.ValueType` to `fvtSum` to show sum value of the column fiel
 Use the sub-properties of `TDBGridEh.FooterParams` property to Customize the footer of the grid:
 
 `Color: TColor`
-<dd>Specifies the background color for the footer color</dd>
+<sh>Specifies the background color for the footer color</sh>
 <br/>
 
 `FillStyle: TGridCellFillStyleEh`
-<dd>Specifies the style of filling the footer cells</dd>
+<sh>Specifies the style of filling the footer cells</sh>
 <br/>
 
 `Font: TFont`
 
-<dd>Controls the font in which the title cells displays its data.</dd>
+<sh>Controls the font in which the title cells displays its data.</sh>
 
 `ParentFont: Boolean`
 
-<dd>Determines where a control looks for its font information.</dd>
+<sh>Determines where a control looks for its font information.</sh>
 
 `RowHeight: Integer`
 
-<dd>Specifies the height of footer row in text lines</dd>
+<sh>Specifies the height of footer row in text lines</sh>
 
 `RowLines: Integer`
 
-<dd>
+<sh>
   Specifies the height of footer row in text lines
   Full row height = height in pixels of RowLines + RowHeight.
-</dd>
+</sh>
 
 `HorzLineColor: TColor`
 
-<dd>Color of the horizontal lines in the footer area.</dd>
+<sh>Color of the horizontal lines in the footer area.</sh>
 
 `HorzLines: Boolean`
 
-<dd>Presence of horizontal lines in the footer area.</dd>
+<sh>Presence of horizontal lines in the footer area.</sh>
 
 `VertLineColor: TColor`
 
-<dd>Color vertical lines in the footer area.</dd>
+<sh>Color vertical lines in the footer area.</sh>
 
 `VertLines: Boolean`
 
-<dd>Presence of vertical lines in the footer area.</dd>
+<sh>Presence of vertical lines in the footer area.</sh>
 
 <br>
 The SumList property includes the following subproperties:
 
 `Active: Boolean`
-<dd>Set this property to activate the object SumList. SumList used to calculate aggregate values in the footer of the grid.</dd>
+<sh>Set this property to activate the object SumList. SumList used to calculate aggregate values in the footer of the grid.</sh>
 
 `ExternalRecalc: Boolean`
-<dd>The property specifies that the summation is an external method implemented in the DBGridEh.OnSumListRecalcAll event handler.</dd>
+<sh>The property specifies that the summation is an external method implemented in the DBGridEh.OnSumListRecalcAll event handler.</sh>
 
 `VirtualRecords: Boolean`
 
-<dd>Set this property to True to correctly calculate the positions of the vertical scrollbars for datasets that do not support or incorrectly returns the number of records through the property `DataSet.RecNo`.</dd>
+<sh>Set this property to True to correctly calculate the positions of the vertical scrollbars for datasets that do not support or incorrectly returns the number of records through the property `DataSet.RecNo`.</sh>
 
 <br/>
 DBGridEh events, related to the calculation of aggregate values in SumList'e:
 
 `OnSumListRecalcAll`
 
-<dd>
+<sh>
 
 The event is called when `DBGridEh.SumList.ExternalRecalc = True`. In the event handler is necessary to calculate the aggregate amount for the items in the collection and fill `DBGridEh.SumList.SumCollection` value `DBGridEh.SumList.SumCollection[i].SumValue`.
-</dd>
+</sh>
 
 `OnSumListAfterRecalcAll`
 
-<dd>The event is called after counting all aggregated values through SumList.</dd>
+<sh>The event is called after counting all aggregated values through SumList.</sh>
 <br>
 
 `TColumnEh.Footer` and `TSolumnEh.Footers[i]` elements have `TColumnFooterEh` type and contain the following properties:
 
 `Alignment: TAlignment`
 
-<dd>Alignment of a summed value in the cell footer.</dd>
+<sh>Alignment of a summed value in the cell footer.</sh>
 <br/>
 
 `Color: TColor`
 
-<dd>Color of a cell footer.</dd>
+<sh>Color of a cell footer.</sh>
 <br/>
 
 `DisplayFormat: String`
 
-<dd>The format for displaying numbers</dd>
+<sh>The format for displaying numbers</sh>
 <br/>
 
 `EndEllipsis: Boolean`
 
-<dd>Display ellipsis if text does not fit in a cell grid</dd>
+<sh>Display ellipsis if text does not fit in a cell grid</sh>
 <br/>
 
 `FieldName: String`
 
-<dd>Name of the field to which it applies the aggregate function of certain properties ValueType</dd>
+<sh>Name of the field to which it applies the aggregate function of certain properties ValueType</sh>
 <br/>
 
 `Font: TFont`
 
-<dd>Font of a cell footer</dd>
+<sh>Font of a cell footer</sh>
 <br/>
 
 `ToolTips: Boolean`
 
-<dd>Whether to display the tooltip window with a full text of the cell when user move the mouse on 
-footer cell if the text does not fit into the cell.</dd>
+<sh>Whether to display the tooltip window with a full text of the cell when user move the mouse on 
+footer cell if the text does not fit into the cell.</sh>
 <br/>
 
 `Value: String`
 
-<dd>Static text that is displayed in the cell when a Footer.ValueType = fvtStaticText</dd>
+<sh>Static text that is displayed in the cell when a Footer.ValueType = fvtStaticText</sh>
 <br/>
 
 `ValueType: TFooterValueType`
 
-<dd>Type of output value, or summing function. The property may comprise the following values:
+<sh>Type of output value, or summing function. The property may comprise the following values:
 
 `fvtNon`, `fvtSum`, `fvtAvg`, `fvtCount`, `fvtFieldValue`, `fvtStaticText` , `fvtMin`, `fvtMax`
-</dd>
+</sh>
 <br/>
 
 `WordWrap: Boolean`
 
-<dd>Wrap text, if it does not fit on one line in a footer cell. </dd>
+<sh>Wrap text, if it does not fit on one line in a footer cell. </sh>
 <br/>
 
 Use `DBGridEh.OnGetFooterParams` event in order to control the parameters of the cell footer draw operation.

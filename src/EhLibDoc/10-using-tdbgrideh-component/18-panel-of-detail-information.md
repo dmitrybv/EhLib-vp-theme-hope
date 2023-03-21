@@ -22,7 +22,7 @@ Subproperties of `RowDatailPanel` propery:
  `BevelWidth: TBevelWidth`<br>
  `BorderStyle: TBorderStyle`: 	
  
- <dd>Use these properties to control border style of panel.</dd>
+ <sh>Use these properties to control border style of panel.</sh>
 
  `Color: TColor`			Color of panel
  

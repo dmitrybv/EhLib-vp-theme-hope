@@ -30,7 +30,7 @@ ServerType	string	Name of the server type.
 In the current version
  	 	  
 Events of TADOConnectionProviderEh component.
-<dd>
+<sh>
 
   `OnExecuteCommand: TResolverExecuteCommandEhEvent`
   
@@ -43,6 +43,6 @@ Events of TADOConnectionProviderEh component.
   `InlineConnectionBeforeConnect: TNotifyEvent`
   
   `InlineConnectionAfterConnect: TNotifyEvent`
-</dd>
+</sh>
 
  	 	 

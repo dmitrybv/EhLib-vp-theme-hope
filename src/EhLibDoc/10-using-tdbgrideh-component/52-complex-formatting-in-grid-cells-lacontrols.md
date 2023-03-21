@@ -115,42 +115,42 @@ Here is a list of available elements and panels of the library.
 
 `TLaObjectEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaObjectsEh`
-<dd>Base element for all placement elements.</dd>
+<sh>Base element for all placement elements.</sh>
 
 `TLaControlEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaControlsEh`
-<dd>Placement element with font, padding and border rendering settings.</dd>
+<sh>Placement element with font, padding and border rendering settings.</sh>
 
 `TLaTextBlockEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaControlsEh`
-<dd>Placement element to display plain text.</dd>
+<sh>Placement element to display plain text.</sh>
 
 `TLaImageEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaControlsEh`
-<dd>Placement element for displaying pictures.</dd>
+<sh>Placement element for displaying pictures.</sh>
 		
 `TLaFlowRichBlockEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaFlowRichBlocksEh`	
-<dd>Placement element for text with the ability to set individual formatting for sections of text.</dd>
+<sh>Placement element for text with the ability to set individual formatting for sections of text.</sh>
 		
 `TLaGridPanelEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaGridPanelsEh`	
-<dd>Grid container. Arranges elements in panel cells with columns and rows.</dd>
+<sh>Grid container. Arranges elements in panel cells with columns and rows.</sh>
 		
 `TLaContentPanelEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaPanelsEh`
-<dd>The container is a simple panel. Arranges multiple elements in the same area without a special layout algorithm.</dd>
+<sh>The container is a simple panel. Arranges multiple elements in the same area without a special layout algorithm.</sh>
 
 `TLaStackPanelEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaPanelsEh`	
-<dd>Container-stack panel. Arranges the element sequentially one after the other from left-to-right or top-to-bottom.</dd>
+<sh>Container-stack panel. Arranges the element sequentially one after the other from left-to-right or top-to-bottom.</sh>
 		
 `TLaHintWindowEh`  
 &nbsp;&nbsp;&nbsp;&nbsp;Unit: `LaHintWindows`
-<dd>Window for displaying hints with the ability to format content through LaControls.</dd>
+<sh>Window for displaying hints with the ability to format content through LaControls.</sh>
 
 `LaObjectTreeViewForms`
-<dd>Window for tree view of LaControls location and property of each element at Run-time. Used to test the display of a complex set of elements.</dd>
+<sh>Window for tree view of LaControls location and property of each element at Run-time. Used to test the display of a complex set of elements.</sh>
 
 
 Below are also a few screenshots from which you can understand the possibilities of displaying complex data that this technology provides.

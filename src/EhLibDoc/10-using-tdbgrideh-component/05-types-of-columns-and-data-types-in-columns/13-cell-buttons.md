@@ -26,7 +26,7 @@ In the following screenshot, the first column displays three `CellButtons` with 
 ```pascal:no-line-numbers
 property HorzPlacement: TEditButtonHorzPlacementEh default ebhpRightEh;
 ```
-<dd>
+<sh>
 
 It specifies the location of the buttons in the grid cell horizontally.
 `TEditButtonHorzPlacementEh` type has the following values:
@@ -37,32 +37,32 @@ It specifies the location of the buttons in the grid cell horizontally.
 
 `ebhpInContentEh` - The button is displayed in the content area of the cell. In this case, the cell content specified by the TColumnEh.FieldName property is not displayed.
 
-</dd><br>
+</sh><br>
 
 ```pascal:no-line-numbers
 property AutoFade: Boolean
 ```
-<dd>
+<sh>
 
 Make the button image faded when the mouse cursor is not over the button. The default is `True`.
 
-</dd><br>
+</sh><br>
 
 ```pascal:no-line-numbers
 property Caption: String
 ```
-<dd>
+<sh>
 
 The content of the button as text. If this property is set, then the button icon specified by the `Style` property is not used.
 
-</dd><br>
+</sh><br>
 
 ```pascal:no-line-numbers
 property Margins: TPaddings
 ```
-<dd>
+<sh>
 Padding from the edges of the button.
-</dd><br>
+</sh><br>
 
 ##### Events:
 
@@ -75,11 +75,11 @@ type
   var ButtonEnabled: Boolean) of object;
 ```
 
-<dd>
+<sh>
 
 The event is called for every record in the grid. You can set `ButtonEnabled` property to set that particular record button is not available for the press. In this case, it will be drawn in the `Disabled` styles.
 
-</dd><br>
+</sh><br>
 
 ```pascal:no-line-numbers
 property OnDraw: TDrawCellButtonEventEh;
@@ -91,28 +91,28 @@ property OnDraw: TDrawCellButtonEventEh;
 ```
 
 
-<dd>
+<sh>
 
 The event is called when rendering the button in a grid cell. In the event you can specify the parameters of the rendering by assigning the appropriate properties in `ButtonDrawParams` parameter, or you yourself can draw the image button, or you can call the default method of rendering - `CellButton`.`DefaultDrawEditButton`. In the second and third case, set the `Handled` parameter to True to prevent the grid drawing the cell after the event.
 
-</dd><br>
+</sh><br>
 
 ```pascal:no-line-numbers
 property OnMouseClick: TMouseCellButtonEventEh;
 ```
-<dd>
+<sh>
 This event is fired when pressing the mouse button.
-</dd><br>
+</sh><br>
 
 ```pascal:no-line-numbers
 property OnMouseDown: TMouseCellButtonEventEh;
 ```
 
-<dd>
+<sh>
 
 Event is fired when the button is clicked with the mouse.
 
-</dd><br>
+</sh><br>
 
 See example of using CellButtons in the Project:
  

@@ -7,24 +7,24 @@ Before the data transfer the `TColumnEh.OnUpdateData` event occurs, where you ca
 The event has the following parameters:
 
 `Sender: TObject`
-<dd>TColumnEh that calls the event.</dd>
+<sh>TColumnEh that calls the event.</sh>
 <br>
 
 `var Text: string` 	
-<dd>The text from the editor of the cell to be written into the field.</dd>
+<sh>The text from the editor of the cell to be written into the field.</sh>
 <br>
 
 `var Value: Variant` 	
-<dd>The value of the cell editor in a variable of type Variant. In some cases, the 
-   value is passed as Variant type. To determine which of the two variable contains the value use UseText parameter.</dd>
+<sh>The value of the cell editor in a variable of type Variant. In some cases, the 
+   value is passed as Variant type. To determine which of the two variable contains the value use UseText parameter.</sh>
 <br>
 
 `var UseText: Boolean`	
-<dd>Determines which parameter Text or Value should be used to record the values in the field.</dd>
+<sh>Determines which parameter Text or Value should be used to record the values in the field.</sh>
 <br>
 
 `var Handled: Boolean`	
-<dd>Set Handled to True to indicate that you have processed the event and do not need to call a method to write the value in the field by default.</dd>
+<sh>Set Handled to True to indicate that you have processed the event and do not need to call a method to write the value in the field by default.</sh>
 <br>
 
 In this event, you can change the Text and the Value that will record in the DataSet. You can also change UseText value to indicate which parameter should be used for recording. If it is used Value parameter, the recording will TField.AsVariant property to write value.

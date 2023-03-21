@@ -12,7 +12,7 @@ It is possible to prevent open a text editor open the cells, which opens by defa
 To prevent or allow certain operations over the records use `DBGridEh.AllowedOperations` property.
 The `DBGridEh.AllowedOperations` property is `TDBGridEhAllowedOperations` type and can contain the following values:
 
-<dd>
+<sh>
 
  `alopInsertEh` – Insert new recordings at any place of the grid (actually DataSet) is allowed.
 
@@ -22,7 +22,7 @@ The `DBGridEh.AllowedOperations` property is `TDBGridEhAllowedOperations` type a
 
  `alopAppendEh` – Adding entries to the end of the grid is allowed.
  
- </dd>
+ </sh>
  
 To enable or disable the change only in a certain cell of a grid is necessary to use the event of TColumnEh object.
 

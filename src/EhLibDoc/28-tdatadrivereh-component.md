@@ -15,25 +15,25 @@ Events of `TDataDriverEh` allows to control data which are transferred between `
 TDataDriverEh have next events:
 
 `OnBuildDataStruct`
-<dd>
+<sh>
 
 write this event to change a structure of fields created when `TMemTableEh` requests structure of fields. You can call `DafaultBuildDataStruct` method to build a structure by default.
-</dd>
+</sh>
 
 `OnProduceDataReader`
-<dd>
+<sh>
 
 write this event to return dataset-cursor to read data. You can call `DefaultProduceDataReader` method to define dataset-cursor by default. By default dataset-cursor will be a `ProviderDataSet`.
-</dd>
+</sh>
 
 `OnReadRecord`
-<dd>
+<sh>
 
 write this event to assign values of record of new record that delivered to `TMemTableEh`, or indicate that no more data. You can call `DefaultReadRecord` method to assign values by default. By default values of record will be assigned from dataset-cursor. If `Eof` function of dataset-cursor is `True` then `TDataDriverEh` indicate that no more data.
-</dd>
+</sh>
 
 `OnAssignFieldValue`
-<dd>
+<sh>
 
 write this event to assign a value of each field of new record that is delivered to `TMemTableEh`, or when record is refreshing. Use `DataValueVersion` to determine the mode of assigning: 
 
@@ -42,61 +42,39 @@ write this event to assign a value of each field of new record that is delivered
 `dvvRefreshValue` - when need to assign value for existing record. 
 
 You can call `DefaultAssignFieldValue` to assign a value of the field by default.
-</dd>
+</sh>
 
 `OnRefreshRecord`
-<dd>
+<sh>
 
 write this event to assign fresh value of fields at the refreshment of record from the server. You an call `DefaultRefreshRecord` to assign fresh values by default.
-</dd>
+</sh>
 
 `OnUpdateRecord`
-<dd>
+<sh>
 
 write this event to process updated records in `TMemTableEh`. Use `MemRec.UpdateStatus` property to determine the type of changes: `Updating`, `Deleting` or `Inserting`. You can call `DefaultUpdateRecord` to process  updated record by default. By default `DataDriver` conducts changes in `ProviderDataSet`.
-</dd>
+</sh>
 
 `OnUpdateError`
-<dd>
+<sh>
 
   write this event to respond certain actions when error is arising in time of processing updates.
   Following reaction is possible when error is arising:
 
-<dl>
-  <dd>
+  <sh>
   
-  `ueaBreakAbortEh` 	Break this and all following operations of changes, exception is not raising.
-  </dd>
-</dl>
-
-<dl>
-  <dd>
+`ueaBreakAbortEh` 	Break this and all following operations of changes, exception is not raising.
 
 `ueaBreakRaiseEh` 	Break this and all following operations of changes, rollback transactions, exception is raising.
-  </dd>
-</dl>
-
-<dl>
-  <dd>
   
 `ueaCountinueEh` 	Ignore an error, does not change a status of a record and continue a performing the rest operations.
-  </dd>
-</dl>
-
-<dl>
-  <dd>
 
 `ueaRetryEh` 	Repeat an operation (You should undertake actions to prevent this error on next time).
-  </dd>
-</dl>
-
-<dl>
-  <dd>
 
 `ueaUpdated` CountinueSkip 	Ignore an error, set record status to Unchanged, continue a performing the rest operations.
-  </dd>
-</dl>
+  </sh>
 
   You can call DefaultUpdateError to execute actions by default.
   
-</dd>
+</sh>

@@ -27,17 +27,17 @@ The `Sheet.Columns` collection contains objects of type `TXlsFileColumnEh`.
 `TXlsFileColumnEh` class contains the following properties:
 
 `property OutlineLevel: Integer;`
-<dd>Grouping level. The property is used when grouping columns in a table. If column does not participate in the grouping, then the value contains 0.</dd>
+<sh>Grouping level. The property is used when grouping columns in a table. If column does not participate in the grouping, then the value contains 0.</sh>
 <br>
 
 `property OutlineNodeCollapsed;`
-<dd>The group header is collapsed. The property is used when grouping columns in a table. If the column is a group header and the group is collapsed, then the property contains True. Columns that are in a collapsed group also need to set the Visible property to False.</dd>
+<sh>The group header is collapsed. The property is used when grouping columns in a table. If the column is a group header and the group is collapsed, then the property contains True. Columns that are in a collapsed group also need to set the Visible property to False.</sh>
 <br>
 
 `property Width: Double;`
-<dd>Column width in Excel units of width.</dd>
+<sh>Column width in Excel units of width.</sh>
 <br>
 
 `property Visible: Boolean;`
-<dd>The column is visible.</dd>
+<sh>The column is visible.</sh>
 <br>

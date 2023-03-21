@@ -44,15 +44,15 @@ Every item of Items list must consists of two values: String - `Items[i]` and Ob
 
 `PopupListboxItemEhSortAsc: TPopupListboxItemEhSort;`
 
-<dd>Item of the list show sorting item Asc and executes sorting in ascending order.</dd>
+<sh>Item of the list show sorting item Asc and executes sorting in ascending order.</sh>
 
 `PopupListboxItemEhSortDes: TPopupListboxItemEhSort;`
 
-<dd>Item of the list show sorting item Asc and executes sorting in descending order.</dd>
+<sh>Item of the list show sorting item Asc and executes sorting in descending order.</sh>
 
 `PopupListboxItemEhLine: TPopupListboxItemEhLine;`
 
-<dd>Item of the list show horizontal line. On choosing doesn't perform any actions.</dd>
+<sh>Item of the list show horizontal line. On choosing doesn't perform any actions.</sh>
 
 `PopupListboxItemEhClearFilter: TPopupListboxItemEhSpec;`
 

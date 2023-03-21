@@ -9,43 +9,43 @@
 
 `Enabled: Boolean;`
 
-<dd>
+<sh>
 Search Panel is available in DBVertGridEh. The Search Panel can be hidden for the user if PersistentShowing = False.
-</dd>
+</sh>
 
 `FilterEnabled: Boolean;`
 
-<dd>
+<sh>
 Specifies that Search Panel results can be filtered.
-</dd>
+</sh>
 
 `FilterOnTyping: Boolean;`
 
-<dd>
+<sh>
 Specifies that filtering must be performed as a text is being typed in the Search Panel editor.
-</dd>
+</sh>
 
 `PersistentShowing: Boolean;`
 
-<dd>
+<sh>
 Specifies that SearchPanel is always visible in TDBVertGridEh. If PersistentShowing = False, the user can display and activate SearchPanel by pressing the key combination defined by a ShortCut property.
-</dd>
+</sh>
 
 `ShortCut: TShortCut`
 
-<dd>
+<sh>
 Sets the key combination by which a focus transfer to the Search Panel text editor.
-</dd>
+</sh>
 
 `CaseSensitive: Boolean`
 
-<dd>
+<sh>
 Specifies the text case sensitivity when searching via Search Panel.
-</dd>
+</sh>
 
 `WholeWords: Boolean `
 
-<dd>
+<sh>
 Specifies that the search must be performed by the whole words when searching via Search Panel.
-</dd>
+</sh>
 
